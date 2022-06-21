@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondony</title>
+    <link rel="shortcut icon" href="./Images/favicon.ico">
+    <link rel="stylesheet" href="./css/mobileFirst.css">
+    <!-- <script src="https://kit.fontawesome.com/d7e4faa8c0.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <div class="logo">
+                <p class="logo1"><a href="./index.html">Mondony</a></p>
+                <p class="logo2"><a href="./index.html">Muebles, arte y diseño</a></p>
+            </div>
+            <label  for="menu_button"><i class="fa-solid fa-bars"></i></label>
+            <!-- <label for="menu_button"><i class="fa-solid fa-xmark"></i></label> -->
+            
+            <input type="checkbox" id="menu_button" placeholder="menu_button">
+            <nav class="menu">
+                <ul>
+                    <li class="menu__item"><a href="./index.html">Inicio</a></li>
+                    <li class="menu__item"><a href="./sobreNosotros.html">Sobre nosotros</a></li>
+                    <li class="menu__item"><a href="./muebles.html">Muebles</a> </li>
+                    <li class="menu__item"><a href="./materiales.html">Materiales</a></li>
+                    <li class="menu__item"><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <h1>CONTACTO</h1>
+
+    <section class="newslatter">
+
+        <form action="./contacto.html" method="GET" enctype="application/x-www-form-urlencoded">
+        
+            <legend>Consultas y presupuestos:</legend>
+            
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" placeholder="Ingresa tu Nombre" required />
+            
+            <label for="apellido">Apellido: </label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu Apellido" />
+            
+            <label for="email">Email:    </label>
+            <input type="email" name="email" id="email" placeholder="Ingresa tu email" required />
+            
+            <div>
+                <label for="tipoUs">Tipo de usuario:</label>
+                <!-- <input type="radio" name="tipoUs" id="Privado" value="Privado" required />
+                <label for="Privado">Privado</label>
+                <input type="radio" name="tipoUs" id="Profecional" value="Profecional" />
+                <label for="Profecional">Profecional</label>
+                <input type="radio" name="tipoUs" id="Empresa" value="Empresa" />
+                <label for="Empresa">Empresa</label> -->
+
+                <select name="tipoUs" id="tipoUs">
+                    <option value="pri">Privado</option>
+                    <option value="pro">Profecional</option>
+                    <option value="emp">Empresa</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="mensaje">Tu mensaje:</label>
+                <textarea name="mensaje" id="mensaje"></textarea>
+            </div>
+
+            <div>
+                <label for="intereses">¿Desea suscribirse a nuestro newslatter?</label>
+                <input type="checkbox" name="suscribirse" id="Suscribirse" value="Suscribirse" checked />
+                <label class="lbSubscribe" for="Suscribirse">Suscribirse</label>
+            </div>
+            
+            <div>
+                <input type="submit" value="Enviar consulta"/>
+                <input type="reset" value="Limpiar consulta"/>
+            </div>
+            
+        </form>
+    </section>
+
+    <footer id="pie"> 
+        <address>
+            <h3>Contacto</h3>
+                
+            <p> <i class="fa-solid fa-phone"></i> Teléfono:
+                <a href="tel:+13115552368" target="_blank">(011) 4377-1111</a>
+            </p>
+            <p> <i class="fa-solid fa-envelope"></i> Mail:
+                <a href="mailto:contacto@mondony.com">contacto@mondony.com</a>
+            </p>
+            <p class="redesSoc">
+                <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-facebook" ></i></a>
+                <a href="https://api.whatsapp.com/send?phone=+541160606060&text=Hola, nececito información!" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </p>
+        </address>
+        <address>
+            <h3>Nuestro local</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Dirección:
+                <a href="https://goo.gl/maps/kyxgYUxf2kmExaaD6" target="_blank"> Lorem ipsum dolor sit 1450.   </a>
+            </p>
+            <p> <i class="fa-solid fa-clock"></i> Horarios de atención: lun-vier: 9 a 18 hs. y sab 10 a 13 hs.</p>
+        </address>
+    </footer>   
+
+  </body>
+</html>
