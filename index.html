@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondony</title>
+    <link rel="shortcut icon" href="./Images/favicon.ico">
+    <link rel="stylesheet" href="./css/mobileFirst.css">
+    <!-- <script src="https://kit.fontawesome.com/d7e4faa8c0.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <div class="logo">
+                <p class="logo1"><a href="./index.html">Mondony</a></p>
+                <p class="logo2"><a href="./index.html">Muebles, arte y diseño</a></p>
+            </div>
+            <label  for="menu_button"><i class="fa-solid fa-bars"></i></label>
+            <!-- <label for="menu_button"><i class="fa-solid fa-xmark"></i></label> -->
+            
+            <input type="checkbox" id="menu_button" placeholder="menu_button">
+            <nav class="menu">
+                <ul>
+                    <li class="menu__item"><a href="./index.html">Inicio</a></li>
+                    <li class="menu__item"><a href="./sobreNosotros.html">Sobre nosotros</a></li>
+                    <li class="menu__item"><a href="./muebles.html">Muebles</a> </li>
+                    <li class="menu__item"><a href="./materiales.html">Materiales</a></li>
+                    <li class="menu__item"><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <img id="imgPortada" src="./images/LivingIndex.png" alt="Foto de living diseñado por Mondony"> 
+    </section>
+
+    <main class="principal">
+        
+        <article>
+            <h1>Espíritu Mondony</h1>
+            <p class="articulo__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia itaque esse saepe unde sit veritatis molestiae laudantium praesentium quia amet inventore aliquid nam dolores ratione eum distinctio totam, cupiditate error?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur saepe amet nisi quae maiores vitae, ex veritatis fugit ratione quibusdam non atque molestias harum placeat maxime iure at eum ut. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </article>
+    
+        <article class="articulo">
+            <div  class="articulo__div">
+                <h2 class="articulo__h2">Diseño & calidad</h2>
+                <p class="articulo__parrafo"> Buscamos la calidad y excelencia en cada material y cuidamos todas las etapas en el proceso de 
+                    fabricación para lograr la perfección en cada detalle.
+                </p>
+            </div>
+            <picture>
+                <img src="./images/silla01.webp" alt="Foto de silla de Mondony">
+            </picture>
+            <div class="articulo__div2">
+                <h2 class="articulo__h2">Ambientación y equipamiento</h2>
+                <p class="articulo__parrafo">Brindamos asesoramiento integral en decoración y Diseño de Interiores junto a un servicio 
+                    de equipamiento total para generar espacios únicos.</p>
+            </div>        
+            <picture class ="articulo__img2">
+                <img src="./images/ambiente.webp" alt="Ambiente Mondony"> 
+            </picture>
+
+        </article>
+    </main>
+
+    <section class="newslatter">
+        
+        <form action="index.html" method="GET" enctype="application/x-www-form-urlencoded">
+          <!-- <fieldset> -->
+            <legend>Suscríbase a nuestro newslatter</legend>
+            <div>
+              <p>Ingrese al mundo Mondony y manténgase al tanto de novedades, ofertas y nuevas colecciones.</p>
+            </div>
+    
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Ingrese su email" />
+            
+            <span>
+              <input id= "suscribe" type="submit" value="Suscribirse"/>
+            </span>
+    
+          <!-- </fieldset> -->
+        </form>
+        
+    </section> 
+
+    <footer id="pie"> 
+        <address>
+            <h3>Contacto</h3>
+             
+            <p> <i class="fa-solid fa-phone"></i> Teléfono:
+                <a href="tel:+13115552368" target="_blank">(011) 4377-1111</a>
+            </p>
+            <p> <i class="fa-solid fa-envelope"></i> Mail:
+                <a href="mailto:contacto@mondony.com">contacto@mondony.com</a>
+            </p>
+            <p class="redesSoc">
+              <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="" target="_blank"><i class="fa-brands fa-facebook" ></i></a>
+              <a href="https://api.whatsapp.com/send?phone=+541160606060&text=Hola, nececito información!" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </p>
+        </address>
+        <address>
+            <h3>Nuestro local</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Dirección:
+                <a href="https://goo.gl/maps/kyxgYUxf2kmExaaD6" target="_blank"> Lorem ipsum dolor sit 1450.   </a>
+            </p>
+            <p> <i class="fa-solid fa-clock"></i> Horarios de atención: lun-vier: 9 a 18 hs. y sab 10 a 13 hs.</p>
+        </address>
+    </footer>
+    
+</body>
+</html>
