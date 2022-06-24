@@ -170,12 +170,15 @@ h1{
     font-size: 1.2em;
     text-align: center;
     margin: 0.6em;
-
 }
+
+
+
 
 .newslatter{
     font-size: 1.6rem;
     background-color:gray;
+    background-image: linear-gradient(rgb(37, 33, 33),gray);
     margin-top: 4rem ;
     padding: 2rem;
 
@@ -213,6 +216,10 @@ h1{
     width: 1rem;
 }
 
+.locDesc{
+    display: none;
+}
+
 .redesSoc{
     /* text-align: center;
     font-stretch: extra-expanded; */
@@ -225,10 +232,10 @@ h1{
 /*NOSOTROS*/
 
 .nosotros{
-    margin-bottom: 5rem;
+    padding-bottom: 5rem;
     text-align: center; 
     line-height: 2rem;
-    
+    background-image: linear-gradient(to right, rgba(128, 128, 128, 0.178) , white,  rgba(128, 128, 128, 0.178));
 }
 
 #nosotros{
@@ -344,6 +351,13 @@ aside h3{
 }
 
 
+.muebles div, .materiales div{
+    animation-duration: 5s;
+    animation-name: aparecer;
+    /* animation-iteration-count:initial; */
+ }
+
+
 /*CONTACTO*/
 
 .newslatter form{
@@ -433,6 +447,41 @@ aside h3{
 .container footer{
     grid-area: footer;
 }
+
+
+/* Animation */
+
+.fadeIn{
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+
+
+.backInRight{
+    animation: backInDown;
+    animation-duration: 1s;
+    animation-iteration-count:initial;
+}
+
+.inLeft{
+    animation: backInLeft;
+    animation-duration: 2s;
+} 
+
+.inUp{
+    animation: backInUp;
+    animation-duration: 2s;
+} 
+
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
 
 
 /*-- Medias querys Desktop--*/
@@ -543,5 +592,10 @@ aside h3{
         "footer footer";
     }
 
+    .locDesc{
+        display: inline;
+    }
+
+    
     
 }
