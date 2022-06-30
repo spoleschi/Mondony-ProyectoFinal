@@ -106,6 +106,10 @@ h2{
     font-size: 1.5rem;
 }
 
+.locDesc{
+    display: none;
+}
+
 /*NOSOTROS*/
 .nosotros{
     background-image: linear-gradient(to right, rgba(97, 97, 97, 0.178) , white,  rgba(97, 97, 97, 0.178));
@@ -225,5 +229,11 @@ background-color: rgb(204, 204, 204);
     }
     100% {
       opacity: 1;
+    }
+ }
+
+@media screen and (min-width:768px) {
+    .locDesc{
+    display: inline;
     }
  }
