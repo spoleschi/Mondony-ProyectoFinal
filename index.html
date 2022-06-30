@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondony</title>
+    <link rel="shortcut icon" href="./Images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Porqué no funciona local fontawesome? -->
+    <!-- <link
+      rel="stylesheet"
+      href="./fonts/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/BS.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar sticky-top navbar-expand-md navbar-light bg-light"
+        id="menunav"
+      >
+        <a class="navbar-brand logo" href="./index.html">
+          <p class="logo1">Mondony</p>
+          <p class="logo2">Muebles, arte y diseño</p>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse wow animate__animated animate__fadeInDown"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html"
+                >Inicio <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobreNosotrosBS.html">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="./mueblesBS.html"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown_saco para que no abra"
+                aria-expanded="false"
+              >
+                Muebles
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./mueblesBS.html">Sofás</a>
+                <a class="dropdown-item" href="#">Sillas</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Ver todos los muebles</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="./materialesBS.html"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown_saco"
+                aria-expanded="false"
+              >
+                Materiales
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactoBS.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <!-- <img
+        id="imgPortada"
+        src="./images/living01.png"
+        alt="Foto de living diseñado por Mondony"
+      /> -->
+
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/images/living01.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/salon01.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/living02.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+       <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+
+      </section>
+
+    <main class="container mt-5 mb-5 principal">
+      <article class="wow fadeIn">
+        <h1 class="text-center mt-3">Espíritu Mondony</h1>
+        <p class="articulo__parrafo text-justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          itaque esse saepe unde sit veritatis molestiae laudantium praesentium
+          quia amet inventore aliquid nam dolores ratione eum distinctio totam,
+          cupiditate error? Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Pariatur saepe amet nisi quae maiores vitae, ex veritatis fugit
+          ratione quibusdam non atque molestias harum placeat maxime iure at eum
+          ut. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </article>
+
+      <article class="text-center">
+        <div class="row mt-5 align-items-center wow inLeft">
+          <div class="col-12 col-md-6 articulo__div">
+            <h2 class="articulo__h2">Diseño & calidad</h2>
+            <p class="articulo__parrafo text-justify">
+              Buscamos la calidad y excelencia en cada material y cuidamos todas
+              las etapas en el proceso de fabricación para lograr la perfección
+              en cada detalle.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <img
+              class=""
+              src="./images/silla01.webp"
+              alt="Foto de silla de Mondony"
+            />
+          </div>
+        </div>
+
+        <div class="row mt-5 align-items-center wow inRight">
+          <div class="col-12 col-md-6 articulo__div order-md-2">
+            <h2 class="articulo__h2 text-center">
+              Ambientación y equipamiento
+            </h2>
+            <p class="articulo__parrafo text-justify">
+              Brindamos asesoramiento integral en decoración y Diseño de
+              Interiores junto a un servicio de equipamiento total para generar
+              espacios únicos.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 col order-md-1">
+            <picture class="articulo__img2">
+              <img
+                class="img-fluid"
+                src="./images/ambiente.webp"
+                alt="Ambiente Mondony"
+              />
+            </picture>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <section class="container-fluid newslatter">
+      <div class="row justify-content-center">
+        <form
+          id="newIdx"
+          action="index.html"
+          method="GET"
+          enctype="application/x-www-form-urlencoded"
+        >
+          <!-- <fieldset> -->
+          <legend>Suscríbase a nuestro newslatter</legend>
+          <div>
+            <p>
+              Ingrese al mundo Mondony y manténgase al tanto de novedades,
+              ofertas y nuevas colecciones.
+            </p>
+          </div>
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Ingrese su email"
+          />
+
+          <span>
+            <input
+              class="btn-outline-secondary"
+              id="suscribe"
+              type="submit"
+              value="Suscribirse"
+            />
+          </span>
+
+          <!-- </fieldset> -->
+        </form>
+      </div>
+    </section>
+
+    <footer id="pie" class="container-fluid pt-3">
+      <div class="row justify-content-around">
+        <address class="col-12 col-sm-6 text-center">
+          <h3>Contacto</h3>
+
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            <span class="locDesc"> Teléfono: </span>
+            <a href="tel:+13115552368" target="_blank">(011) 4377-1111</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            <span class="locDesc"> Mail: </span>
+            <a href="mailto:contacto@mondony.com">contacto@mondony.com</a>
+          </p>
+          <p class="redesSoc">
+            <a href="" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a
+              href="https://api.whatsapp.com/send?phone=+541160606060&text=Hola, nececito información!"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </p>
+        </address>
+        <address class="col-12 col-sm-6 text-center">
+          <h3>Nuestro local</h3>
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="locDesc"> Dirección: </span>
+            <a href="https://goo.gl/maps/kyxgYUxf2kmExaaD6" target="_blank"
+              >Lorem ipsum dolor sit 1450.</a
+            >
+          </p>
+          <p>
+            <i class="fa-solid fa-clock"></i>
+            <span class="locDesc"> Horarios de atención: </span>lun-vier: 9 a 18
+            hs. y sab 10 a 13 hs.
+          </p>
+        </address>
+      </div>
+    </footer>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script> -->
+  </body>
+</html>
