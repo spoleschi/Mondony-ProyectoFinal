@@ -159,7 +159,7 @@ h2{
 background-color: rgb(204, 204, 204);
 }
 
-.muebles div, .materiales div{
+.muebles div{
     animation-duration: 5s;
     animation-name: aparecer;
  }
