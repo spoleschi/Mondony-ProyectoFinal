@@ -23,6 +23,7 @@
   "homepage": "https://github.com/spoleschi/Mondony-ProyectoFinal#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.18"
+    "nodemon": "^2.0.18",
+    "sass-glob-importer": "^1.0.1"
   }
 }
