@@ -57,6 +57,19 @@
 body {
   font-family: 'Montserrat', sans-serif; }
 
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.7rem; }
+
+.btn-light {
+  margin: 1rem; }
+  .btn-light:hover {
+    background-color: #212529;
+    color: #e2e6ea;
+    border-color: #dae0e5; }
+
 /* INDEX */
 #imgPortada {
   width: 95%;
@@ -66,8 +79,19 @@ body {
   margin-right: auto;
   opacity: 0.95; }
 
-h2 {
-  font-size: 1.7rem; }
+.wrapper-video {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  opacity: 0.9; }
+  .wrapper-video video {
+    width: 90%; }
+
+.articulo__parrafo {
+  line-height: 2rem; }
 
 /*CONTACTO*/
 .newslatter {
@@ -90,6 +114,7 @@ h2 {
     margin-bottom: 1rem; }
   .newslatter [type=email] {
     width: 100%;
+    max-width: 400px;
     margin-bottom: 1rem; }
   .newslatter [type=reset]:hover {
     transform: scale(1.1); }

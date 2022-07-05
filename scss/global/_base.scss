@@ -11,5 +11,24 @@
 
 body{
     font-family: 'Montserrat', sans-serif; 
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.7rem;
+}
+
+.btn-light{
+    margin: 1rem;
+    &:hover{
+        background-color: #212529;
+        color: #e2e6ea;
+        border-color: #dae0e5;
     }
+
+}
+
 

@@ -8,9 +8,27 @@
 	margin-right: auto;
 	opacity: 0.95;
 }
-h2 {
-	font-size: 1.7rem;
+
+.wrapper-video{
+	height: 300px;
+	width: 100%;
+	overflow: hidden;
+	display:flex;
+	align-items: center;
+	justify-content: end;
+	opacity: 0.9;
+	video{
+		width: 90%;
+	}
 }
+
+.articulo__parrafo{
+		line-height: 2rem;
+}
+
+
+
+
 
 /*CONTACTO*/
 .newslatter {
@@ -37,6 +55,7 @@ h2 {
     }
     [type=email] {
     	width: 100%;
+		max-width: 400px;
     	margin-bottom: 1rem;
     }
     [type=reset] {
