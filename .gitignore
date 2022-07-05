@@ -1,8 +1,2 @@
-.vs/desktop.ini
-.vs/Clase1/desktop.ini
-.vs/Clase1/v15/desktop.ini
-.vs/config/desktop.ini
-.vs/Mondony/desktop.ini
-.vs/Mondony/v15/desktop.ini
-.vscode/desktop.ini
-.vs/desktop.ini
+*.ini
+node_modules/
