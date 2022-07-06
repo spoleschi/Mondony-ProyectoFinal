@@ -9,6 +9,63 @@
 	opacity: 0.95;
 }
 
+.arrow-bottom{
+	position: absolute;
+	bottom: 0px;
+	z-index: 1;
+	display: block;
+	width: 100%;
+	text-align: center;
+    opacity: .5;
+	a{
+		line-height: 50px;
+	}
+	
+	&:hover{
+		opacity: 1;
+	}
+	span{
+		transform: rotate(90deg);
+	}
+}
+
+.picTitle{
+	position: absolute;
+	top: 10%;
+}
+
+.cardPic {
+    position: relative;
+    width: 100%;
+}
+
+.cardPic__title {
+    font-size: 1.5rem;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600 ;
+} 
+
+.cardPic__cta {
+    font-size: 1rem;
+	margin: 0.5em;
+	
+	font-weight: 50 ;
+	text-transform: uppercase;
+} 
+
+@media screen and (min-width:768px) {
+	.cardPic__title{
+		font-size: 2.5rem;
+	}
+}
+
+@media screen and (min-width:992px) {
+	.cardPic__title{
+		font-size: 3rem;
+	}
+}
+
 .wrapper-video{
 	height: 300px;
 	width: 100%;
@@ -26,8 +83,10 @@
 		line-height: 2rem;
 }
 
-
-
+#newIdx {
+	color: #fff;
+	max-width: 800px;
+}
 
 
 /*CONTACTO*/
@@ -72,10 +131,6 @@
 			transform: scale(1.1);
 		}
 	}
-}
-#newIdx {
-	color: #fff;
-	max-width: 800px;
 }
 
 /*NOSOTROS*/
@@ -169,4 +224,8 @@
 		opacity: 1;
 	}
 }
+
+
+
+
 

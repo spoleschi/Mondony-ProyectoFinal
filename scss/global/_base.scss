@@ -9,6 +9,10 @@
     box-sizing: border-box; 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Montserrat', sans-serif; 
 }
@@ -21,6 +25,10 @@ h2 {
 	font-size: 1.7rem;
 }
 
+a{
+    text-decoration: none;
+}
+
 .btn-light{
     margin: 1rem;
     &:hover{
@@ -30,5 +38,7 @@ h2 {
     }
 
 }
+
+
 
 
