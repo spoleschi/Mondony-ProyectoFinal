@@ -41,7 +41,7 @@
 
 .cardPic__title {
     font-size: 1.5rem;
-	color: #fff;
+	color: $colorLight;
 	text-transform: uppercase;
 	font-weight: 600 ;
 } 
@@ -49,7 +49,6 @@
 .cardPic__cta {
     font-size: 1rem;
 	margin: 0.5em;
-	
 	font-weight: 50 ;
 	text-transform: uppercase;
 } 
@@ -70,9 +69,10 @@
 	height: 300px;
 	width: 100%;
 	overflow: hidden;
-	display:flex;
-	align-items: center;
-	justify-content: end;
+	// display:flex;
+	// align-items: center;
+	// justify-content: end;
+	@include flex(end, center, nowrap);
 	opacity: 0.9;
 	video{
 		width: 90%;
@@ -84,18 +84,17 @@
 }
 
 #newIdx {
-	color: #fff;
+	color: $colorLight;
 	max-width: 800px;
 }
 
-
 /*CONTACTO*/
 .newslatter {
-	background-image: linear-gradient(rgb(37, 33, 33),gray);
+	background-image: linear-gradient($colorDark,$colorGray);
 	padding: 2rem;
 	line-height: 20px;
 	form {
-		color: #fff;
+		color: $colorLight;
 		max-width: 400px;
 		width: 90%;
 		margin: auto;
@@ -135,7 +134,7 @@
 
 /*NOSOTROS*/
 .nosotros {
-	background-image: linear-gradient(to right, rgba(97, 97, 97, 0.178) , white, rgba(97, 97, 97, 0.178));
+	background-image: linear-gradient(to right, rgba(97, 97, 97, 0.178) , $colorLight, rgba(97, 97, 97, 0.178));
 	h2 {
 		font-size: 1.5rem;
 		font-weight: 600;
@@ -144,16 +143,21 @@
 		font-size: 1.5rem;
 	}
 }
+
+#preguntasFrecuentes{
+	overflow-x:hidden;
+}
+
 .formaPago {
 	th {
-		background-color: gray;
-		color: white;
+		background-color: $colorLightGray;
+		color: $colorLight;
 		letter-spacing: 2px;
 		padding: 5px 8px;
 		text-transform: uppercase;
 	}
 	td {
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid $colorDark;
 		padding: 5px 8px;
 	}
 	tr {
@@ -175,16 +179,17 @@
 		animation-name: aparecer;
 	}
 }
+
 #collapseMenu {
 	a {
 		text-decoration: none;
-		color: black;
+		color: $colorDark;
 	}
 	li {
 		padding: 0.4rem;
 		list-style-type: none;
 		&:hover {
-			background-color: rgb(204, 204, 204);
+			background-color: $colorLightGray;
 		}
 	}
 }
@@ -224,8 +229,3 @@
 		opacity: 1;
 	}
 }
-
-
-
-
-

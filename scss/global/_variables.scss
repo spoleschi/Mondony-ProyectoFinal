@@ -1,16 +1,22 @@
-$colorBlack: black;
-$colorWhite: #fff;
-$colorWhite2: #e2e6ea;
+/*COlORES*/
+$colorDark: black;
+$colorLight: #fff;
+$colorLight2: #e2e6ea;
 $colorGray: gray;
 $colorLightGray: #cccccc;
-$colorStrongGray: rgba(87, 86, 86, 0.66);
+$colorStrongGray: rgba(34, 35, 37, 0.85);
 
-$fontSite: 'Montserrat', sans-serif;
+/*FUENTES*/
+$fontPri: 'Montserrat', 'sans-serif';
 
 /*TAMAÑO FUENTE*/
-$fontSize: 1rem;
+$fontXSmall: 0.8rem;
+$fontSmall: 1.2rem;
+$fontMedium: 1.6rem;
+$fontLarge: 2rem;
+$fontXLarge: 2.5rem;
 
 /*ESPACIADOS*/
-$large: 2rem;
-$medium: 1rem;
 $small: 0.5rem;
+$medium: 1rem;
+$large: 1.5rem;

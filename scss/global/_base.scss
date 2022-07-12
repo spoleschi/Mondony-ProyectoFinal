@@ -3,7 +3,9 @@
     src: url(../fonts/Montserrat-Regular.ttf);
 }
 
-*{
+*::after,
+*::before,
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
@@ -18,11 +20,11 @@ body{
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: $fontLarge;
 }
 
 h2 {
-	font-size: 1.7rem;
+	font-size: $fontMedium;
 }
 
 a{
@@ -32,11 +34,10 @@ a{
 .btn-light{
     margin: 1rem;
     &:hover{
-        background-color: #212529;
-        color: #e2e6ea;
-        border-color: #dae0e5;
+        background-color: $colorStrongGray;
+        color: $colorLight2;
+        border-color: $colorLight2;
     }
-
 }
 
 
