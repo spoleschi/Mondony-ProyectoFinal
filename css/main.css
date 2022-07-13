@@ -22,9 +22,12 @@
   margin: 0;
   padding: 0; }
 
-#navbarSupportedContent ul li {
-  color: black;
-  font-size: 0.9rem; }
+#navbarSupportedContent ul {
+  margin-right: 1.5rem; }
+  #navbarSupportedContent ul li {
+    color: black;
+    font-size: 0.8rem;
+    padding-left: 1rem; }
 
 #menunav {
   padding-top: 0;
@@ -38,7 +41,7 @@
 
 #pie {
   font-size: 0.8rem;
-  color: white;
+  color: #fff;
   background-color: black; }
   #pie a {
     color: #fff; }
@@ -49,7 +52,7 @@
 
 .redesSoc a {
   padding: 0 1rem;
-  font-size: 1.5rem; }
+  font-size: 1.2rem; }
 
 .locDesc {
   display: none; }
@@ -79,17 +82,18 @@ h1 {
   font-size: 2rem; }
 
 h2 {
-  font-size: 1.7rem; }
+  font-size: 1.6rem; }
+
+h3 {
+  font-size: 1.6rem; }
 
 a {
   text-decoration: none; }
 
-.btn-light {
-  margin: 1rem; }
-  .btn-light:hover {
-    background-color: #212529;
-    color: #e2e6ea;
-    border-color: #dae0e5; }
+.btn-light:hover {
+  background-color: rgba(34, 35, 37, 0.85);
+  color: #e2e6ea;
+  border-color: #e2e6ea; }
 
 /* INDEX */
 #imgPortada {
@@ -100,21 +104,6 @@ a {
   margin-right: auto;
   opacity: 0.95; }
 
-.arrow-bottom {
-  position: absolute;
-  bottom: 0px;
-  z-index: 1;
-  display: block;
-  width: 100%;
-  text-align: center;
-  opacity: .5; }
-  .arrow-bottom a {
-    line-height: 50px; }
-  .arrow-bottom:hover {
-    opacity: 1; }
-  .arrow-bottom span {
-    transform: rotate(90deg); }
-
 .picTitle {
   position: absolute;
   top: 10%; }
@@ -124,22 +113,44 @@ a {
   width: 100%; }
 
 .cardPic__title {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #fff;
   text-transform: uppercase;
   font-weight: 600; }
 
 .cardPic__cta {
-  font-size: 1rem;
-  margin: 0.5em;
-  font-weight: 50;
   text-transform: uppercase; }
+
+.goAhead {
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  text-align: center;
+  opacity: .5; }
+  .goAhead a {
+    line-height: 50px; }
+  .goAhead:hover {
+    opacity: 1; }
+
+.arrowContainer {
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  position: relative; }
+
+.arrow-bottom {
+  animation: arrow 2s ease-in-out infinite;
+  font-size: 20px; }
 
 @media screen and (min-width: 768px) {
   .cardPic__title {
     font-size: 2.5rem; } }
 
 @media screen and (min-width: 992px) {
+  .cardPic__cta a {
+    font-size: 1.2rem; }
   .cardPic__title {
     font-size: 3rem; } }
 
@@ -174,7 +185,7 @@ a {
     margin: auto; }
   .newslatter legend {
     text-transform: uppercase;
-    padding: 0.9rem 0; }
+    padding: 1rem 0; }
   .newslatter select {
     width: 100%;
     margin-bottom: 1rem; }
@@ -195,18 +206,15 @@ a {
 
 /*NOSOTROS*/
 .nosotros {
-  background-image: linear-gradient(to right, rgba(97, 97, 97, 0.178), #fff, rgba(97, 97, 97, 0.178)); }
+  background-image: linear-gradient(to right, rgba(121, 121, 126, 0.178), #fff, rgba(121, 121, 126, 0.178)); }
   .nosotros h2 {
-    font-size: 1.5rem;
     font-weight: 600; }
-  .nosotros h3 {
-    font-size: 1.5rem; }
 
 #preguntasFrecuentes {
   overflow-x: hidden; }
 
 .formaPago th {
-  background-color: #cccccc;
+  background-color: gray;
   color: #fff;
   letter-spacing: 2px;
   padding: 5px 8px;
@@ -217,7 +225,7 @@ a {
   padding: 5px 8px; }
 
 .formaPago tr:hover {
-  background: linear-gradient(90deg, #f7f7f7 0%, rgba(87, 86, 86, 0.66) 50%); }
+  background: linear-gradient(90deg, #fff 0%, gray 90%); }
 
 /*MUEBLES Y MATERIALES*/
 .muebles img {
@@ -265,3 +273,11 @@ a {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+@keyframes arrow {
+  0% {
+    transform: rotate(90deg); }
+  50% {
+    transform: translate(0, 20px) rotate(90deg); }
+  100% {
+    transform: rotate(90deg); } }
