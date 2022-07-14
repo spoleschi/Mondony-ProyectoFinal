@@ -24,11 +24,40 @@
 	color: $colorLight;
 	text-transform: uppercase;
 	font-weight: 600 ;
+	@include res768{
+		font-size: $fontXLarge;
+	}
+	@include res992{
+		font-size: $fontXXLarge;
+	}
 } 
+
+// @media screen and (min-width:768px) {
+// 	.cardPic__title{
+// 		font-size: $fontXLarge;
+// 	}
+// }
 
 .cardPic__cta {
 	text-transform: uppercase;
+	a{
+		@include res992{
+			font-size: $fontSmall;
+		}
+	}
 } 
+
+// @media screen and (min-width:992px) {
+// 	.cardPic__cta{
+// 		a{
+// 			font-size: $fontSmall;
+// 		}
+// 	}
+// 	.cardPic__title{
+// 		font-size: $fontXXLarge;
+// 	}
+// }
+
 
 .goAhead{
 	position: absolute;
@@ -62,23 +91,6 @@
 	font-size:20px;
 }
 
-@media screen and (min-width:768px) {
-	.cardPic__title{
-		font-size: $fontXLarge;
-	}
-}
-
-@media screen and (min-width:992px) {
-	.cardPic__cta{
-		a{
-			font-size: $fontSmall;
-		}
-	}
-	.cardPic__title{
-		font-size: $fontXXLarge;
-	}
-}
-
 .wrapper-video{
 	height: 300px;
 	width: 100%;
@@ -86,7 +98,7 @@
 	// display:flex;
 	// align-items: center;
 	// justify-content: end;
-	@include flex(end, center, nowrap);
+	@include flex(row, end, center, nowrap);
 	opacity: 0.9;
 	video{
 		width: 90%;
@@ -94,12 +106,16 @@
 }
 
 .articulo__parrafo{
-	line-height: 2rem;
+	line-height: $xlarge;
 }
 
 #newIdx {
 	color: $colorLight;
 	max-width: 800px;
+}
+
+#suscribe{
+	margin-left:$small;
 }
 
 /*CONTACTO*/

@@ -20,10 +20,14 @@
 }
 .locDesc {
 	display: none;
-}
-
-@media screen and (min-width:768px) {
-	.locDesc {
+	@include res768(){
 		display: inline;
 	}
 }
+
+// @media screen and (min-width:768px) {
+// 	.locDesc {
+// 		display: inline;
+// 	}
+// }
+
