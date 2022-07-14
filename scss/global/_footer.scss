@@ -1,29 +1,33 @@
 #pie {
-	font-size: 0.8rem;
-	color: white;
-	background-color: black;
+	font-size: $fontXSmall;
+	color: $colorLight;
+	background-color: $colorDark;
 	a {
-		color: white;
+		color: $colorLight
 	}
 	h3 {
-		font-size: 1.2rem;
+		font-size: $fontSmall;
 	}
 	p {
-		margin-bottom: 0.5rem;
+		margin-bottom: $small;
 	}
 }
 .redesSoc {
 	a {
-		padding: 0 1rem;
-		font-size: 1.5rem;
+		padding: 0 $medium;
+		font-size: $fontSmall;
 	}
 }
 .locDesc {
 	display: none;
-}
-
-@media screen and (min-width:768px) {
-	.locDesc {
+	@include res768(){
 		display: inline;
 	}
 }
+
+// @media screen and (min-width:768px) {
+// 	.locDesc {
+// 		display: inline;
+// 	}
+// }
+

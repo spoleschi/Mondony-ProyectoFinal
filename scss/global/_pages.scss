@@ -2,14 +2,64 @@
 
 #imgPortada {
 	width: 95%;
-	margin: 1rem;
+	margin: $medium;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	opacity: 0.95;
 }
 
-.arrow-bottom{
+.picTitle{
+	position: absolute;
+	top: 10%;
+}
+
+.cardPic {
+    position: relative;
+    width: 100%;
+}
+
+.cardPic__title {
+    font-size: $fontMedium;
+	color: $colorLight;
+	text-transform: uppercase;
+	font-weight: 600 ;
+	@include res768{
+		font-size: $fontXLarge;
+	}
+	@include res992{
+		font-size: $fontXXLarge;
+	}
+} 
+
+// @media screen and (min-width:768px) {
+// 	.cardPic__title{
+// 		font-size: $fontXLarge;
+// 	}
+// }
+
+.cardPic__cta {
+	text-transform: uppercase;
+	a{
+		@include res992{
+			font-size: $fontSmall;
+		}
+	}
+} 
+
+// @media screen and (min-width:992px) {
+// 	.cardPic__cta{
+// 		a{
+// 			font-size: $fontSmall;
+// 		}
+// 	}
+// 	.cardPic__title{
+// 		font-size: $fontXXLarge;
+// 	}
+// }
+
+
+.goAhead{
 	position: absolute;
 	bottom: 0px;
 	z-index: 1;
@@ -24,55 +74,31 @@
 	&:hover{
 		opacity: 1;
 	}
-	span{
-		transform: rotate(90deg);
-	}
+	// span{
+	// 	transform: rotate(90deg);
+	// }
 }
 
-.picTitle{
-	position: absolute;
-	top: 10%;
+.arrowContainer{
+	width: 100px;
+	height: 50px;
+	margin:0 auto;
+	position: relative;
 }
 
-.cardPic {
-    position: relative;
-    width: 100%;
-}
-
-.cardPic__title {
-    font-size: 1.5rem;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 600 ;
-} 
-
-.cardPic__cta {
-    font-size: 1rem;
-	margin: 0.5em;
-	
-	font-weight: 50 ;
-	text-transform: uppercase;
-} 
-
-@media screen and (min-width:768px) {
-	.cardPic__title{
-		font-size: 2.5rem;
-	}
-}
-
-@media screen and (min-width:992px) {
-	.cardPic__title{
-		font-size: 3rem;
-	}
+.arrow-bottom {
+	animation: arrow 2s ease-in-out infinite;
+	font-size:20px;
 }
 
 .wrapper-video{
 	height: 300px;
 	width: 100%;
 	overflow: hidden;
-	display:flex;
-	align-items: center;
-	justify-content: end;
+	// display:flex;
+	// align-items: center;
+	// justify-content: end;
+	@include flex(row, end, center, nowrap);
 	opacity: 0.9;
 	video{
 		width: 90%;
@@ -80,42 +106,46 @@
 }
 
 .articulo__parrafo{
-		line-height: 2rem;
+	line-height: $xlarge;
 }
 
 #newIdx {
-	color: #fff;
+	color: $colorLight;
 	max-width: 800px;
 }
 
+#suscribe{
+	margin-left:$small;
+}
 
 /*CONTACTO*/
 .newslatter {
-	background-image: linear-gradient(rgb(37, 33, 33),gray);
-	padding: 2rem;
+	background-image: linear-gradient($colorDark,$colorGray);
+	padding: $xlarge;
 	line-height: 20px;
 	form {
-		color: #fff;
+		color: $colorLight;
 		max-width: 400px;
 		width: 90%;
 		margin: auto;
 	}
 	legend {
+		font-size: $medium;
 		text-transform: uppercase;
-		padding: 0.9rem 0;
+		padding: $medium 0;
 	}
 	select {
 		width: 100%;
-		margin-bottom: 1rem;
+		margin-bottom: $medium;
 	}
 	input[type=text] {
 	width: 100%;
-	margin-bottom: 1rem;
+	margin-bottom: $medium;
     }
     [type=email] {
     	width: 100%;
 		max-width: 400px;
-    	margin-bottom: 1rem;
+    	margin-bottom: $medium;
     }
     [type=reset] {
     	&:hover {
@@ -135,30 +165,31 @@
 
 /*NOSOTROS*/
 .nosotros {
-	background-image: linear-gradient(to right, rgba(97, 97, 97, 0.178) , white, rgba(97, 97, 97, 0.178));
+	background-image: linear-gradient(to right, rgba(121, 121, 126, 0.178) , $colorLight, rgba(121, 121, 126, 0.178));
 	h2 {
-		font-size: 1.5rem;
 		font-weight: 600;
 	}
-	h3 {
-		font-size: 1.5rem;
-	}
 }
+
+#preguntasFrecuentes{
+	overflow-x:hidden;
+}
+
 .formaPago {
 	th {
-		background-color: gray;
-		color: white;
+		background-color: $colorGray;
+		color: $colorLight;
 		letter-spacing: 2px;
 		padding: 5px 8px;
 		text-transform: uppercase;
 	}
 	td {
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid $colorDark;
 		padding: 5px 8px;
 	}
 	tr {
 		&:hover {
-			background: linear-gradient(90deg, rgb(247, 247, 247) 0%, rgba(87, 86, 86, 0.66) 50%);
+			background: linear-gradient(90deg, $colorLight 0%, $colorGray 90%);
 		}
 	}
 }
@@ -175,16 +206,17 @@
 		animation-name: aparecer;
 	}
 }
+
 #collapseMenu {
 	a {
 		text-decoration: none;
-		color: black;
+		color: $colorDark;
 	}
 	li {
-		padding: 0.4rem;
+		padding: $small - 0.1rem;
 		list-style-type: none;
 		&:hover {
-			background-color: rgb(204, 204, 204);
+			background-color: $colorLightGray;
 		}
 	}
 }
@@ -225,7 +257,14 @@
 	}
 }
 
-
-
-
-
+@keyframes arrow {
+	0% {
+	transform: rotate(90deg) ;
+	}
+	50% {
+	transform: translate(0, 20px) rotate(90deg) ;
+	}
+	100% {
+	transform: rotate(90deg) ;
+	}
+}
