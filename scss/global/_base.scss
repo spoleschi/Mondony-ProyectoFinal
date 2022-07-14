@@ -38,15 +38,13 @@ a{
     }
 }
 
-
-.btn-light{
-    &:hover{
-        background-color: $colorStrongGray;
-        color: $colorLight2;
-        border-color: $colorLight2;
-    }
-}
-
+// .btn-light{
+//     &:hover{
+//         background-color: $colorStrongGray;
+//         color: $colorLight2;
+//         border-color: $colorLight2;
+//     }
+// }
 
 .button {
     display: inline-block;

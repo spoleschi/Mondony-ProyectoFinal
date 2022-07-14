@@ -94,11 +94,6 @@ h3 {
 a:hover {
   text-decoration: none; }
 
-.btn-light:hover {
-  background-color: rgba(34, 35, 37, 0.85);
-  color: #e2e6ea;
-  border-color: #e2e6ea; }
-
 .button, .btn-colorDark-colorLight, .btn-colorDark-colorLight2, .btn-colorDark-colorLightGray, .btn-colorStrongGray-colorLight, .btn-colorStrongGray-colorLight2, .btn-colorStrongGray-colorLightGray, .btn-colorLight-colorDark, .btn-colorLight2-colorDark, .btn-colorLightGray-colorDark, .btn-colorLight-colorStrongGray, .btn-colorLight2-colorStrongGray, .btn-colorLightGray-colorStrongGray {
   display: inline-block;
   padding: 0 0.3rem;
@@ -265,6 +260,7 @@ a:hover {
     width: 90%;
     margin: auto; }
   .newslatter legend {
+    font-size: 1rem;
     text-transform: uppercase;
     padding: 1rem 0; }
   .newslatter select {
