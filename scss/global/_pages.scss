@@ -40,10 +40,13 @@
 
 .cardPic__cta {
 	text-transform: uppercase;
+	
 	a{
 		@include res992{
 			font-size: $fontSmall;
 		}
+		border: none;
+		box-shadow: 0 0 0 0.3rem rgba(216, 217, 219, 0.5);
 	}
 } 
 
