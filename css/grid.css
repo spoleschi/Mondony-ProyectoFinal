@@ -9,116 +9,15 @@
   box-sizing: border-box; 
 }
 
-html{
+/* html{
   font-size: 62.5%;
-}
+} */
 
 body{
-  /* font-family: montserrat;   */
   font-family: 'Montserrat', sans-serif; 
-  font-size: 1.6rem;
-  }
-
-header{
-  position: sticky;
-  top:0;
-  z-index: 100;
+  font-size: 1rem;
 }
 
-.encabezado{
-  width: 100%;
-  background-color: white; 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #c7c6c6;
-} 
-
-.logo{
-  /* width: 20rem; */
-  /* background-color: cadetblue; */
-  /* width: 35%; */
-  width: 90%;
-  
-}
-
-.logo p a{
-  color: black;
-  text-decoration: none;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.logo1 {
-  /* font-size: 4.5rem;
-  letter-spacing: .1rem; */
-
-  font-size: 3.1rem;
-  letter-spacing: .05rem;
-}
-
-.logo2 {
-  /* font-size: 1.25rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem; */
-
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05rem;
-}
-
-.menu {
-  
-   /* height: 100vh;  */
-  background-color: rgba(255, 255, 255, 0.95); 
-  position: absolute;
-  left: -100%;
-  top: 7.6rem;
-  text-transform: uppercase; 
-  text-align: center;
-  font-size: 1.4rem;
-  /* padding: 10px; */
-  transition: 0.5s;
-  width: 100%;
-  /* border: 1px solid black; */
-  padding: 1rem;
-}
-
-
-.menu__item{
-  padding: 0.9rem;
-  list-style: none;
-  
-}
-
-.menu__item a{
-  text-decoration: none;
-  color: black;
-}
-
-
-#menu_button:checked + .menu {
-  /* display: block;  */
-  left:0;
-}
-
-#menu_button{
-  display: none;
-}
-
-#imgPortada{
-  width: 95%;
-  margin: 2rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  opacity: 0.95;
-}
-
-h1{
-  padding-top: 2rem;
-  text-align: center;
-}
 
 .principal, .nosotros
 {
@@ -168,22 +67,6 @@ h1{
   margin: 0.6em;
 }
 
-
-
-
-.newslatter{
-  font-size: 1.6rem;
-  background-color:gray;
-  background-image: linear-gradient(rgb(37, 33, 33),gray);
-  margin-top: 4rem ;
-  padding: 2rem;
-
-  border: 20px;
-  width: 100%;
-  display: inline-block;
-
-  line-height: 20px;
-}
 #pie {
   font-size: 0.8rem;
   color: #fff;
@@ -191,69 +74,20 @@ h1{
   #pie a {
     color: #fff; }
   #pie h3 {
-    font-size: 1.6rem; }
+    font-size: 1rem; }
   #pie p {
     margin-bottom: 0.5rem; }
 
-.redesSoc a {
-  padding: 0 1rem;
-  font-size: 1.6rem; }
+  .redesSoc a {
+      padding: 0 1rem;
+      font-size: 1rem; }
+    
 
 .locDesc {
   display: none; }
   @media screen and (min-width: 768px) {
     .locDesc {
       display: inline; } }
-
-
-/*NOSOTROS*/
-
-.nosotros{
-  padding-bottom: 5rem;
-  text-align: center; 
-  line-height: 2rem;
-  background-image: linear-gradient(to right, rgba(128, 128, 128, 0.178) , white,  rgba(128, 128, 128, 0.178));
-}
-
-#nosotros{
-  margin-top: 4rem;
-  padding: 1rem;
-  /* border-top: 1px solid black;
-  border-bottom: 1px solid black; */
-}
-
-.nosotros h2{
-  text-transform: uppercase;
-  padding: 0.6em;
-  line-height: 3rem;
-  font-size: 1.3em;
-}
-
-.nosotros h3{
-  padding: 0.6em;
-  font-size: 1.1em;
-}
-
-.nosotros p{
-  margin-top: 1rem;
-  margin-bottom: 5rem;
-  font-style:italic;
-}
-
-.nosotros table{
-  margin: 0 auto;
-  /* border-collapse: collapse; */
-}
-
-table{
-  border-collapse: separate;
-  border-spacing: 0px 10px;
-  border: 1pt solid gray;
-}
-
-table td{
-  border-top: 1pt solid gray;
-}
 
 
 /*MUEBLES Y MATERIALES*/
@@ -266,7 +100,7 @@ table td{
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 2rem;
+  /* margin: 2rem; */
 }
 
 .muebles div, .materiales div{
@@ -282,7 +116,6 @@ table td{
 .muebles div a, .materiales div a{
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 2rem;
   color: black;
 }
 
@@ -292,7 +125,7 @@ table td{
 }
 
 .menumuebles{
-  padding: 0.9rem;
+  padding: 0.2rem;
   list-style-type:none ;
   margin: 0.5rem;
   /* border: 1px solid black; */
@@ -322,8 +155,11 @@ table td{
 
 aside h3{
   padding: 1rem;
+  background-color: rgb(232, 234, 235);
   /* border: 1px solid black; */
   text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
 }
 
 
@@ -331,55 +167,6 @@ aside h3{
   animation-duration: 5s;
   animation-name: aparecer;
   /* animation-iteration-count:initial; */
-}
-
-
-/*CONTACTO*/
-
-.newslatter form{
-  color: #fff;
-  max-width: 400px;
-  width: 90%;
-  margin: auto;
-}
-
-/* .newslatter input{
-  width: 90%;
-} */
-
-.newslatter legend {
-  text-transform:uppercase;
-  padding: 1.5rem 0;
-}
-
-.newslatter p{
-  margin: 1rem 0;
-}
-
-.newslatter select, input[type=text],[type=email] {
-  width: 100%;
-  margin-bottom: 1rem;   
-}
-
-.newslatter input, select{
-  font-size: 1.5rem;
-}
-
-.newslatter label{
-  display:block;
-}
-
-.newslatter .lbSubscribe{
-  display:inline;
-}
-
-.newslatter input[type=submit],input[type=reset]{
-  margin: 1rem 0;
-}
-
-.newslatter textarea{
-  width: 100%;
-  height: 120px;
 }
 
 
@@ -407,7 +194,9 @@ aside h3{
   grid-area: title;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1.6rem;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
   font-weight: bold;
 }
 
@@ -420,8 +209,8 @@ aside h3{
   min-width: 220px;
 }
 .containerGrid aside h3{
-  font-size: 1.17em;
-  font-weight: bold;
+  font-size: 1rem;
+  /* font-weight: bold; */
 }
 
 .containerGrid footer{
@@ -527,10 +316,7 @@ aside h3{
       color: #444;
   } 
 
-  #pie{
-      font-size: 1.3rem;
-      line-height: 2.5rem;
-  }
+  
 
   .articulo{
       grid-template-columns: repeat(2, minmax(300px,500px));
