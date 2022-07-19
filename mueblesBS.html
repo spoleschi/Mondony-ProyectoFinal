@@ -1,41 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Seo -->
-    <meta name="description" content="Catálogo de muebles de Mondony Muebles, Arte y Diseño, tienda de muebles y objetos de diseño que interpreta necesidades de clientes que buscan muebles especiales">
-    <meta name="keyword" content="Mondony, tienda muebles, arte, diseño, muebleria, muebles, catalogo de muebles, muebles de diseño, muebles de calidad, diseño de interiores">
-    
-    <title>Muebles Mondony</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="./Images/favicon.ico" />
+  <!-- Seo -->
+  <meta name="description"
+    content="Catálogo de muebles de Mondony Muebles, Arte y Diseño, tienda de muebles y objetos de diseño que interpreta necesidades de clientes que buscan muebles especiales">
+  <meta name="keyword"
+    content="Mondony, tienda muebles, arte, diseño, muebleria, muebles, catalogo de muebles, muebles de diseño, muebles de calidad, diseño de interiores">
+  <title>Muebles Mondony</title>
+  <link rel="shortcut icon" href="./Images/favicon.ico" />
 
-    <!-- Porqué no funciona local fontawesome? -->
-    <!-- <link
-      rel="stylesheet"
-      href="./fonts/all.min.css"
-    /> -->
-    
+  <!-- Animate & Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- Animate & Fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    
-    <!--Mi css-->
-    <!-- <link rel="stylesheet" href="./css/BS.css" /> -->
-    <link rel="stylesheet" href="./css/mainmin.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+  <!--Mi css-->
+  <!-- <link rel="stylesheet" href="./css/BS.css" /> -->
+  <link rel="stylesheet" href="./css/mainmin.css">
 </head>
 
 <body>
@@ -58,24 +48,19 @@
           <a class="nav-link" href="./sobreNosotrosBS.html">Nosotros</a>
         </li>
         <li class="nav-item active dropdown">
-          <!-- <a class="nav-link dropdown-toggle" href="./mueblesBS.html" id="navbarDropdown" role="button"
-            data-toggle="dropdown_saco" aria-expanded="false"> -->
-          <a class="nav-link" href="./mueblesBS.html" id="navbarDropdown" role="button"
-            data-toggle="dropdown_saco" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="./mueblesBS.html" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-expanded="false">
             Muebles <span class="sr-only">(current)</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Sofás</a>
-            <a class="dropdown-item" href="#">Sillas</a>
+            <a class="dropdown-item" href="./mueblesBS.html">Muebles Bootstrap</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="./mueblesGrid.html">Muebles Grid & Flex</a>
           </div>
         </li>
         <li class="nav-item dropdown">
-          <!-- <a class="nav-link dropdown-toggle" href="./materialesBS.html" id="navbarDropdown" role="button"
-            data-toggle="dropdown_saco" aria-expanded="false"> -->
-          <a class="nav-link" href="./materialesBS.html" id="navbarDropdown" role="button"
-            data-toggle="dropdown_saco" aria-expanded="false">
+          <a class="nav-link" href="./materialesBS.html" id="navbarDropdown" role="button" data-toggle="dropdown_saco"
+            aria-expanded="false">
             Materiales
           </a>
         </li>
@@ -88,38 +73,12 @@
 
   <div class="container-fluid mt-3">
     <div class="row">
-      <aside class="col-12 col-md-3 col-lg-2 text-center">
-        <button id="btncollapseMenu" class="btn btn-light" type="button" data-toggle="collapse"
-          data-target="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu">
-          Catálogo de muebles
-        </button>
-        <div class="collapse" id="collapseMenu">
-          <ul>
-            <li class="menumuebles"><a href="./mueblesBS.html">Sofás </a></li>
-            <li class="menumuebles"><a href="./mueblesBS.html">Sillones y poltronas </a></li>
-            <li class="menumuebles"><a href="./mueblesBS.html">Sillas </a></li>
-            <li class="menumuebles"><a href="./mueblesBS.html">Bancos </a></li>
-            <li class="menumuebles"><a href="./mueblesBS.html">Divanes </a></li>
-            <li class="menumuebles"><a href="./mueblesBS.html">Taburetes </a></li>
-            <li class="menumuebles"><a href="./mueblesBS.html">Mesas de comedor </a></li>
-            <li class="menumuebles"><a href="./mueblesBS.html">Mesas de centro </a></li>
-            <li class="menumuebles"><a href="./mueblesBS.html">Mesas auxiliares </a></li>
-            <li class="menumuebles"><a href="./mueblesBS.html">Mesas de luz </a></li>
-            <li class="menumuebles"><a href="./mueblesBS.html">Camas </a></li>
-            <li class="menumuebles"><a href="./mueblesBS.html">Respaldos </a></li>
-            <li class="menumuebles"><a href="./mueblesBS.html">Vajilleros </a></li>
-            <li class="menumuebles"><a href="./mueblesBS.html">Cómodas </a></li>
-            <li class="menumuebles"><a href="./mueblesBS.html">Espejos </a></li>
-          </ul>
-        </div>
-      </aside>
-
-      <main class="col-12 col-md-9 col-lg-10">
+      <main class="col-12 col-md-9 col-lg-10 col order-md-2">
         <div class="galeria container-fluid">
           <div class="text-center pt-3">
-            <h2 class="titulo mt-1 mb-5 text-uppercase font-weight-bold">
+            <h1 class="titulo mt-1 mb-4 text-uppercase font-weight-bold">
               Muebles
-            </h2>
+            </h1>
           </div>
 
           <div class="muebles row justify-content-center">
@@ -162,6 +121,31 @@
           </div>
         </div>
       </main>
+      <aside class="col-12 col-md-3 col-lg-2 col order-md-1 text-center">
+        <button id="btncollapseMenu" class="btn btn-light mb-3" type="button" data-toggle="collapse"
+          data-target="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu">
+          Catálogo de muebles
+        </button>
+        <div class="collapse" id="collapseMenu">
+          <ul>
+            <li class="menumuebles"><a href="./mueblesBS.html">Sofás </a></li>
+            <li class="menumuebles"><a href="./mueblesBS.html">Sillones y poltronas </a></li>
+            <li class="menumuebles"><a href="./mueblesBS.html">Sillas </a></li>
+            <li class="menumuebles"><a href="./mueblesBS.html">Bancos </a></li>
+            <li class="menumuebles"><a href="./mueblesBS.html">Divanes </a></li>
+            <li class="menumuebles"><a href="./mueblesBS.html">Taburetes </a></li>
+            <li class="menumuebles"><a href="./mueblesBS.html">Mesas de comedor </a></li>
+            <li class="menumuebles"><a href="./mueblesBS.html">Mesas de centro </a></li>
+            <li class="menumuebles"><a href="./mueblesBS.html">Mesas auxiliares </a></li>
+            <li class="menumuebles"><a href="./mueblesBS.html">Mesas de luz </a></li>
+            <li class="menumuebles"><a href="./mueblesBS.html">Camas </a></li>
+            <li class="menumuebles"><a href="./mueblesBS.html">Respaldos </a></li>
+            <li class="menumuebles"><a href="./mueblesBS.html">Vajilleros </a></li>
+            <li class="menumuebles"><a href="./mueblesBS.html">Cómodas </a></li>
+            <li class="menumuebles"><a href="./mueblesBS.html">Espejos </a></li>
+          </ul>
+        </div>
+      </aside>
     </div>
   </div>
 

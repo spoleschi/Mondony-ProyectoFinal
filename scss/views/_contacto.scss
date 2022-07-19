@@ -1,0 +1,43 @@
+.newslatter {
+	background-image: linear-gradient($colorDark,$colorGray);
+	padding: $xlarge;
+	line-height: 20px;
+	form {
+		color: $colorLight;
+		max-width: 400px;
+		width: 90%;
+		margin: auto;
+	}
+	legend {
+		font-size: $medium;
+		text-transform: uppercase;
+		padding: $medium 0;
+	}
+	select {
+		width: 100%;
+		margin-bottom: $medium;
+	}
+	input[type=text] {
+	width: 100%;
+	margin-bottom: $medium;
+    }
+    [type=email] {
+    	width: 100%;
+		max-width: 400px;
+    	margin-bottom: $medium;
+    }
+    [type=reset] {
+    	&:hover {
+    		transform: scale(1.1);
+    	}
+    }
+	textarea {
+		width: 100%;
+		height: 100px;
+	}
+	input[type=submit] {
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*COlORES*/
+/*COLORES*/
 /*FUENTES*/
 /*TAMAÑO FUENTE*/
 /*ESPACIADOS*/
@@ -7,69 +7,6 @@
 /*Flex*/
 /*Grid*/
 /*Responsive*/
-.navbar-brand {
-  padding-top: 0; }
-
-.navbar-light {
-  background-color: rgba(250, 250, 250, 0.9);
-  background-image: none;
-  border-bottom: 1px solid #e2e6ea; }
-
-.logo p {
-  font-family: 'Times New Roman', Times, serif; }
-
-.logo1 {
-  font-size: 2.6rem;
-  margin: 0;
-  padding: 0;
-  line-height: 3rem; }
-
-.logo2 {
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05rem;
-  margin: 0;
-  padding: 0; }
-
-#navbarSupportedContent ul {
-  margin-right: 1.5rem; }
-  #navbarSupportedContent ul li {
-    color: black;
-    font-weight: 700;
-    font-size: 0.8rem;
-    padding-left: 1rem; }
-
-#menunav {
-  padding-top: 0;
-  padding-bottom: 0; }
-
-.nav-item {
-  text-transform: uppercase; }
-
-#menu_button {
-  display: none; }
-
-#pie {
-  font-size: 0.8rem;
-  color: #fff;
-  background-color: black; }
-  #pie a {
-    color: #fff; }
-  #pie h3 {
-    font-size: 1rem; }
-  #pie p {
-    margin-bottom: 0.5rem; }
-
-.redesSoc a {
-  padding: 0 1rem;
-  font-size: 1rem; }
-
-.locDesc {
-  display: none; }
-  @media screen and (min-width: 768px) {
-    .locDesc {
-      display: inline; } }
-
 @font-face {
   font-family: Montserrat;
   src: url(../fonts/Montserrat-Regular.ttf);
@@ -89,7 +26,8 @@ body {
   font-family: 'Montserrat', sans-serif; }
 
 h1 {
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-weight: 700; }
 
 h2 {
   font-size: 1.6rem; }
@@ -174,7 +112,102 @@ a:hover {
   background-color: #cccccc;
   color: rgba(34, 35, 37, 0.85); }
 
-/* INDEX */
+.navbar-brand {
+  padding-top: 0; }
+
+.navbar-light {
+  background-color: rgba(250, 250, 250, 0.9);
+  background-image: none;
+  border-bottom: 1px solid #e2e6ea; }
+
+.logo p {
+  font-family: 'Times New Roman', Times, serif; }
+
+.logo1 {
+  font-size: 2.6rem;
+  margin: 0;
+  padding: 0;
+  line-height: 3rem; }
+
+.logo2 {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin: 0;
+  padding: 0; }
+
+#navbarSupportedContent ul {
+  margin-right: 1.5rem; }
+  #navbarSupportedContent ul li {
+    color: black;
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding-left: 1rem; }
+
+#menunav {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.nav-item {
+  text-transform: uppercase; }
+
+.dropdown-menu {
+  font-size: 0.8rem; }
+
+#menu_button {
+  display: none; }
+
+#pie {
+  font-size: 0.8rem;
+  color: #fff;
+  background-color: black; }
+  #pie a {
+    color: #fff; }
+  #pie h3 {
+    font-size: 1rem; }
+  #pie p {
+    margin-bottom: 0.5rem; }
+
+.redesSoc a {
+  padding: 0 1rem;
+  font-size: 1rem; }
+
+.locDesc {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .locDesc {
+      display: inline; } }
+
+.fadeIn {
+  animation: fadeIn;
+  animation-duration: 2s; }
+
+.inLeft {
+  animation: backInLeft;
+  animation-duration: 2s; }
+
+.inRight {
+  animation: backInRight;
+  animation-duration: 2s; }
+
+.inUp {
+  animation: backInUp;
+  animation-duration: 2s; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes arrow {
+  0% {
+    transform: rotate(90deg); }
+  50% {
+    transform: translate(0, 20px) rotate(90deg); }
+  100% {
+    transform: rotate(90deg); } }
+
 #imgPortada {
   width: 95%;
   margin: 1rem;
@@ -255,10 +288,54 @@ a:hover {
   color: #fff;
   max-width: 800px; }
 
-#suscribe {
-  margin-left: 0.5rem; }
+#email {
+  margin-right: 0.5rem; }
 
-/*CONTACTO*/
+.nosotros {
+  background-image: linear-gradient(to right, rgba(121, 121, 126, 0.178), #fff, rgba(121, 121, 126, 0.178)); }
+  .nosotros h2 {
+    font-weight: 600; }
+
+#preguntasFrecuentes {
+  overflow-x: hidden; }
+
+.formaPago th {
+  background-color: gray;
+  color: #fff;
+  letter-spacing: 2px;
+  padding: 5px 8px;
+  text-transform: uppercase; }
+
+.formaPago td {
+  border-bottom: 1px solid black;
+  padding: 5px 8px; }
+
+.formaPago tr:hover {
+  background: linear-gradient(90deg, #fff 0%, gray 90%); }
+
+.muebles img {
+  width: 100%;
+  max-width: 320px;
+  height: auto; }
+
+.muebles div {
+  animation-duration: 5s;
+  animation-name: aparecer; }
+
+#collapseMenu a {
+  text-decoration: none;
+  color: black; }
+
+#collapseMenu li {
+  padding: 0.4rem;
+  list-style-type: none; }
+  #collapseMenu li:hover {
+    background-color: #cccccc; }
+
+.galeria img:hover {
+  filter: opacity(0.8);
+  transform: scale(1.05); }
+
 .newslatter {
   background-image: linear-gradient(black, gray);
   padding: 2rem;
@@ -289,81 +366,3 @@ a:hover {
     height: 100px; }
   .newslatter input[type=submit]:hover {
     transform: scale(1.1); }
-
-/*NOSOTROS*/
-.nosotros {
-  background-image: linear-gradient(to right, rgba(121, 121, 126, 0.178), #fff, rgba(121, 121, 126, 0.178)); }
-  .nosotros h2 {
-    font-weight: 600; }
-
-#preguntasFrecuentes {
-  overflow-x: hidden; }
-
-.formaPago th {
-  background-color: gray;
-  color: #fff;
-  letter-spacing: 2px;
-  padding: 5px 8px;
-  text-transform: uppercase; }
-
-.formaPago td {
-  border-bottom: 1px solid black;
-  padding: 5px 8px; }
-
-.formaPago tr:hover {
-  background: linear-gradient(90deg, #fff 0%, gray 90%); }
-
-/*MUEBLES Y MATERIALES*/
-.muebles img {
-  width: 100%;
-  max-width: 320px;
-  height: auto; }
-
-.muebles div {
-  animation-duration: 5s;
-  animation-name: aparecer; }
-
-#collapseMenu a {
-  text-decoration: none;
-  color: black; }
-
-#collapseMenu li {
-  padding: 0.4rem;
-  list-style-type: none; }
-  #collapseMenu li:hover {
-    background-color: #cccccc; }
-
-.galeria img:hover {
-  filter: opacity(0.8);
-  transform: scale(1.05); }
-
-/* Animation */
-.fadeIn {
-  animation: fadeIn;
-  animation-duration: 2s; }
-
-.inLeft {
-  animation: backInLeft;
-  animation-duration: 2s; }
-
-.inRight {
-  animation: backInRight;
-  animation-duration: 2s; }
-
-.inUp {
-  animation: backInUp;
-  animation-duration: 2s; }
-
-@keyframes aparecer {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes arrow {
-  0% {
-    transform: rotate(90deg); }
-  50% {
-    transform: translate(0, 20px) rotate(90deg); }
-  100% {
-    transform: rotate(90deg); } }

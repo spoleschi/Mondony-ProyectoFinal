@@ -1,0 +1,29 @@
+.nosotros {
+	background-image: linear-gradient(to right, rgba(121, 121, 126, 0.178) , $colorLight, rgba(121, 121, 126, 0.178));
+	h2 {
+		font-weight: 600;
+	}
+}
+
+#preguntasFrecuentes{
+	overflow-x:hidden;
+}
+
+.formaPago {
+	th {
+		background-color: $colorGray;
+		color: $colorLight;
+		letter-spacing: 2px;
+		padding: 5px 8px;
+		text-transform: uppercase;
+	}
+	td {
+		border-bottom: 1px solid $colorDark;
+		padding: 5px 8px;
+	}
+	tr {
+		&:hover {
+			background: linear-gradient(90deg, $colorLight 0%, $colorGray 90%);
+		}
+	}
+}

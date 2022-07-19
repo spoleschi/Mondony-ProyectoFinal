@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,17 +8,8 @@
     <!-- Seo -->
     <meta name="description" content="Catálogo de materieales de Mondony Muebles, Arte y Diseño, tienda de muebles y objetos de diseño que interpreta necesidades de clientes que buscan muebles especiales">
     <meta name="keyword" content="Mondony, tienda muebles, arte, diseño, muebleria, materiales, catalogo de materiales, muebles de diseño, muebles de calidad, diseño de interiores">
-    
     <link rel="shortcut icon" href="./Images/favicon.ico" />
-
     <title>Materiales Mondony</title>
-
-    <!-- Porqué no funciona local fontawesome? -->
-    <!-- <link
-      rel="stylesheet"
-      href="./fonts/all.min.css"
-    /> -->
-    
 
     <!-- Animate & Fontawesome -->
     <link
@@ -29,6 +20,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     
@@ -36,31 +28,19 @@
     <!-- <link rel="stylesheet" href="./css/BS.css" /> -->
     <link rel="stylesheet" href="./css/mainmin.css">
   </head>
+  
   <body>
-    <nav
-      class="navbar sticky-top navbar-expand-md navbar-light"
-      id="menunav"
-    >
+    <nav class="navbar sticky-top navbar-expand-md navbar-light" id="menunav">
       <a class="navbar-brand logo" href="./index.html">
         <p class="logo1">Mondony</p>
         <p class="logo2">Muebles, arte y diseño</p>
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div
-        class="collapse navbar-collapse wow animate__animated animate__fadeInDown"
-        id="navbarSupportedContent"
-      >
+  
+      <div class="collapse navbar-collapse wow animate__animated animate__fadeInDown" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="./index.html">Inicio </a>
@@ -69,48 +49,19 @@
             <a class="nav-link" href="./sobreNosotrosBS.html">Nosotros</a>
           </li>
           <li class="nav-item dropdown">
-            <!-- <a
-              class="nav-link dropdown-toggle"
-              href="./mueblesBS.html"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown_saco"
-              aria-expanded="false"
-            > -->
-            <a
-              class="nav-link"
-              href="./mueblesBS.html"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown_saco"
-              aria-expanded="false"
-            >
+            <a class="nav-link dropdown-toggle" href="./mueblesBS.html" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-expanded="false">
               Muebles
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Sofás</a>
-              <a class="dropdown-item" href="#">Sillas</a>
+              <a class="dropdown-item" href="./mueblesBS.html">Muebles Bootstrap</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="./mueblesGrid.html">Muebles Grid & Flex</a>
             </div>
           </li>
           <li class="nav-item active dropdown">
-            <!-- <a
-              class="nav-link dropdown-toggle"
-              href="./materialesBS.html"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown_saco"
-              aria-expanded="false"
-            > -->
-            <a
-              class="nav-link"
-              href="./materialesBS.html"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown_saco"
-              aria-expanded="false"
-            >
+            <a class="nav-link" href="./materialesBS.html" id="navbarDropdown" role="button" 
+              data-toggle="dropdown_saco" aria-expanded="false">
               Materiales <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -123,42 +74,12 @@
 
     <div class="container-fluid mt-3">
       <div class="row">
-        <aside class="col-12 col-md-3 col-lg-2 text-center">
-          <button
-            id="btncollapseMenu"
-            class="btn btn-light"
-            type="button"
-            data-toggle="collapse"
-            data-target="#collapseMenu"
-            aria-expanded="false"
-            aria-controls="collapseMenu"
-          >
-            Catálogo de materiales
-          </button>
-          <div class="collapse" id="collapseMenu">
-            <ul>
-              <li class="menumuebles"><a href="./materialesBS.html">Cueros </a></li>
-              <li class="menumuebles"><a href="./materialesBS.html">Cueros sintéticos </a></li>
-              <li class="menumuebles"><a href="./materialesBS.html">Telas </a></li>
-              <li class="menumuebles"><a href="./materialesBS.html">Sintéticos </a></li>
-              <li class="menumuebles"><a href="./materialesBS.html">Maderas </a></li>
-              <li class="menumuebles"><a href="./materialesBS.html">Enchapados </a></li>
-              <li class="menumuebles"><a href="./materialesBS.html">Melaminas </a></li>
-              <li class="menumuebles"><a href="./materialesBS.html">Laqueados </a></li>
-              <li class="menumuebles"><a href="./materialesBS.html">Epoxi </a></li>
-              <li class="menumuebles"><a href="./materialesBS.html">Metales </a></li>
-              <li class="menumuebles"><a href="./materialesBS.html">Vidrios </a></li>
-              <li class="menumuebles"><a href="./materialesBS.html">Mármol </a></li>
-            </ul>
-          </div>
-        </aside>
-
-        <main class="col-12 col-md-9 col-lg-10">
+        <main class="col-12 col-md-9 col-lg-10 col order-md-2">
           <div class="galeria container-fluid">
             <div class="text-center pt-3">
-              <h2 class="titulo mt-1 mb-5 text-uppercase font-weight-bold">
+              <h1 class="titulo mt-1 mb-4 text-uppercase font-weight-bold">
                 Materiales
-              </h2>
+              </h1>
             </div>
 
             <div class="muebles row justify-content-center">
@@ -201,6 +122,29 @@
             </div>
           </div>
         </main>
+        
+        <aside class="col-12 col-md-3 col-lg-2 col order-md-1 text-center">
+          <button id="btncollapseMenu" class="btn btn-light  mb-3" type="button" data-toggle="collapse"
+            data-target="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu">
+            Catálogo de muebles
+          </button>
+          <div class="collapse" id="collapseMenu">
+            <ul>
+              <li class="menumuebles"><a href="./materialesBS.html">Cueros </a></li>
+              <li class="menumuebles"><a href="./materialesBS.html">Cueros sintéticos </a></li>
+              <li class="menumuebles"><a href="./materialesBS.html">Telas </a></li>
+              <li class="menumuebles"><a href="./materialesBS.html">Sintéticos </a></li>
+              <li class="menumuebles"><a href="./materialesBS.html">Maderas </a></li>
+              <li class="menumuebles"><a href="./materialesBS.html">Enchapados </a></li>
+              <li class="menumuebles"><a href="./materialesBS.html">Melaminas </a></li>
+              <li class="menumuebles"><a href="./materialesBS.html">Laqueados </a></li>
+              <li class="menumuebles"><a href="./materialesBS.html">Epoxi </a></li>
+              <li class="menumuebles"><a href="./materialesBS.html">Metales </a></li>
+              <li class="menumuebles"><a href="./materialesBS.html">Vidrios </a></li>
+              <li class="menumuebles"><a href="./materialesBS.html">Mármol </a></li>
+            </ul>
+          </div>
+        </aside>
       </div>
     </div>
 
