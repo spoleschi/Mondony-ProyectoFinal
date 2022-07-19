@@ -18,54 +18,67 @@ body{
   font-size: 1rem;
 }
 
-
 .principal, .nosotros
 {
   width: 90%;
   margin: 0 auto;
 }
 
-/*Para la versión del index con flex*/
-.articuloFlex{
-  /* border: 1px solid black; */
-  margin-top: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+
+/*NAV*/
+
+nav{
+  font-size: 500%;
 }
 
-/*Para la versión del index con grid*/
-.articulo{
-  margin-top: 2em;
-  /* border: 1px solid black; */
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
+.navbar-brand {
+  padding-top: 0; }
+
+.navbar-light {
+  background-color: rgba(250, 250, 250, 0.9);
+  background-image: none;
+  border-bottom: 1px solid #e2e6ea; }
+
+.logo p {
+  font-family: 'Times New Roman', Times, serif; }
+
+.logo1 {
+  font-size: 2.6rem;
+  margin: 0;
+  padding: 0;
+  line-height: 3rem; }
+
+.logo2 {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin: 0;
+  padding: 0; }
+
+#navbarSupportedContent ul {
+  margin-right: 1.5rem; }
+  #navbarSupportedContent ul li {
+    color: black;
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding-left: 1rem; }
+
+#menunav {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.nav-item {
+  text-transform: uppercase; }
+
+.dropdown-menu{
+  font-size: 0.8rem;
 }
 
-.articulo img{
-  width: 100%;
-  /* border: 1px solid black; */
-  border-radius: 10px;
-}
+#menu_button {
+  display: none; }
 
-.articuloFlex__div{
-  /* border: 1px solid black; */
-  max-width: 70rem;
-  padding: 1rem;
-}
 
-.articulo__parrafo{
-  padding: 0.6em;
-  line-height: 3rem;
-  text-align: justify;
-}
-.articulo__h2{
-  font-size: 1.2em;
-  text-align: center;
-  margin: 0.6em;
-}
+/*FOOTER*/
 
 #pie {
   font-size: 0.8rem;
@@ -82,7 +95,6 @@ body{
       padding: 0 1rem;
       font-size: 1rem; }
     
-
 .locDesc {
   display: none; }
   @media screen and (min-width: 768px) {
@@ -162,13 +174,11 @@ aside h3{
   border-radius: 10px;
 }
 
-
 .muebles div, .materiales div{
   animation-duration: 5s;
   animation-name: aparecer;
   /* animation-iteration-count:initial; */
 }
-
 
 /* ------------------ grid-template-areas -----------------------*/
 
@@ -178,9 +188,10 @@ aside h3{
   gap: 20px;
   grid-template-areas: 
   "header"
-  "aside"
+  /* "aside" */
   "title"
   "main"
+  "aside"
   "footer";
 
   grid-template-columns: 1fr;
@@ -218,14 +229,12 @@ aside h3{
   grid-area: footer;
 }
 
-
 /* Animation */
 
 .fadeIn{
   animation: fadeIn;
   animation-duration: 2s;
 }
-
 
 .backInRight{
   animation: backInDown;
@@ -252,88 +261,10 @@ aside h3{
   }
 }
 
-
-
 /*-- Medias querys Desktop--*/
 
 
 @media screen and (min-width:768px) {
-
-
-  header label {
-      display: none;
-  }
-  
-  .logo{
-      width: auto;
-  }
-  .logo1 a{
-      font-size: 4.5rem;
-      letter-spacing: .1rem;
-  }
-
-  .logo2 a{
-      font-size: 1.25rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1rem;
-  }
-
-  .principal{
-      width: 80%;
-  }
-
-
-  header{
-      position: sticky;
-      top:0;
-      z-index: 100;
-  }
-
-  .menu{
-      /* display: block; */
-      position:static;
-      width: auto;
-      transition: 0;
-      padding: 0;
-      
-      left: 0;
-      
-  }
-
-  .menu__item{
-      display: inline-block;
-  }
-
-  .menu__item a{
-      text-decoration: none;
-      color: black;
-  }
-
-  .menu__item:hover{
-      transform: scale(1.05);
-  }
-
-  .menu__item a:hover{
-      color: #444;
-  } 
-
-  
-
-  .articulo{
-      grid-template-columns: repeat(2, minmax(300px,500px));
-      align-items: center;
-      justify-content: center;
-  }
-
-  /*ver como usar nth-child*/
-  /* .articulo:nth-child(3){
-      grid-column: 2/3;
-  }
-
-  .articulo:nth-child(4){
-      grid-column: 1/2;
-      grid-row: 2/3;
-  } */
 
   .articulo__div2{
       grid-column: 2/3;
@@ -362,60 +293,6 @@ aside h3{
   .locDesc{
       display: inline;
   }
-
-  
   
 }
 
-
-
-nav{
-  font-size: 500%;
-}
-
-
-.navbar-brand {
-  padding-top: 0; }
-
-.navbar-light {
-  background-color: rgba(250, 250, 250, 0.9);
-  background-image: none;
-  border-bottom: 1px solid #e2e6ea; }
-
-.logo p {
-  font-family: 'Times New Roman', Times, serif; }
-
-.logo1 {
-  font-size: 2.6rem;
-  margin: 0;
-  padding: 0;
-  line-height: 3rem; }
-
-.logo2 {
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05rem;
-  margin: 0;
-  padding: 0; }
-
-#navbarSupportedContent ul {
-  margin-right: 1.5rem; }
-  #navbarSupportedContent ul li {
-    color: black;
-    font-weight: 700;
-    font-size: 0.8rem;
-    padding-left: 1rem; }
-
-#menunav {
-  padding-top: 0;
-  padding-bottom: 0; }
-
-.nav-item {
-  text-transform: uppercase; }
-
-.dropdown-menu{
-  font-size: 0.8rem;
-}
-
-#menu_button {
-  display: none; }
