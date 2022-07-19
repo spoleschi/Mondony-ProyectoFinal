@@ -194,10 +194,11 @@ aside h3{
   grid-area: title;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  font-weight: 700;
   padding-top: 1rem;
   margin-bottom: 2rem;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .muebles{
@@ -411,6 +412,10 @@ nav{
 
 .nav-item {
   text-transform: uppercase; }
+
+.dropdown-menu{
+  font-size: 0.8rem;
+}
 
 #menu_button {
   display: none; }

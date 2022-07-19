@@ -11,8 +11,8 @@
 	background-color: rgba(250, 250, 250, 0.9);
 	background-image:none;
 	border-bottom: 1px solid $colorLight2;
-  }
-
+  
+}
 
 .logo {
 	p {
@@ -44,6 +44,7 @@
 		}
 	}
 }
+
 #menunav {
 	padding-top: 0;
 	padding-bottom: 0;
@@ -51,6 +52,11 @@
 .nav-item {
 	text-transform: uppercase;
 }
+
+.dropdown-menu{
+    font-size: 0.8rem;
+}
+
 #menu_button {
 	display: none;
 }

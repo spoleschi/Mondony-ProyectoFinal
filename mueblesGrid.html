@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mondony</title>
-    <link rel="shortcut icon" href="./Images/favicon.ico">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Seo -->
+  <meta name="description" content="Catálogo de materieales de Mondony Muebles, Arte y Diseño, tienda de muebles y objetos de diseño que interpreta necesidades de clientes que buscan muebles especiales">
+  <meta name="keyword" content="Mondony, tienda muebles, arte, diseño, muebleria, materiales, catalogo de materiales, muebles de diseño, muebles de calidad, diseño de interiores">
+  
+  <link rel="shortcut icon" href="./Images/favicon.ico" />
+
+  <title>Materiales Mondony</title>
+
+  <!-- Porqué no funciona local fontawesome? -->
+  <!-- <link
+    rel="stylesheet"
+    href="./fonts/all.min.css"
+  /> -->
+  
+
+  <!-- Animate & Fontawesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  
+  <!--Mi css-->
 
     <link rel="stylesheet" href="./css/grid.css">
-    <!-- <script src="https://kit.fontawesome.com/d7e4faa8c0.js" crossorigin="anonymous"></script> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="containerGrid">
@@ -34,17 +57,16 @@
                   <a class="nav-link" href="./sobreNosotrosBS.html">Nosotros</a>
                 </li>
                 <li class="nav-item active dropdown">
-                  <!-- <a class="nav-link dropdown-toggle" href="./mueblesBS.html" id="navbarDropdown" role="button"
+                  <a class="nav-link dropdown-toggle" href="./mueblesBS.html" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-expanded="false">
+                  <!-- <a class="nav-link" href="./mueblesBS.html" id="navbarDropdown" role="button"
                     data-toggle="dropdown_saco" aria-expanded="false"> -->
-                  <a class="nav-link" href="./mueblesBS.html" id="navbarDropdown" role="button"
-                    data-toggle="dropdown_saco" aria-expanded="false">
                     Muebles <span class="sr-only">(current)</span>
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Sofás</a>
-                    <a class="dropdown-item" href="#">Sillas</a>
+                    <a class="dropdown-item" href="./mueblesBS.html">Muebles Bootstrap</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="./mueblesGrid.html">Muebles Grid & Flex</a>
                   </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -61,7 +83,7 @@
               </ul>
             </div>
         </nav>
-        <h2 class="titulo">Muebles</h2>
+        <h1 class="titulo">Muebles</h1>
         <aside>
             <h3>Catálogo de muebles</h3>
             <ul>
@@ -173,5 +195,11 @@
             </div>
           </footer>
     </div>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
