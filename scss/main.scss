@@ -1,8 +1,12 @@
 @import './global/variables';
 @import './global/mixins';
-@import './global/_header';
-@import './global/footer';
-@import './global/_base';
-@import './global/pages';
+@import './global/base';
+@import './partials/header';
+@import './partials/footer';
+@import './global/animation';
+@import './views/index';
+@import './views/nosotros';
+@import './views/mue&mat';
+@import './views/contacto';
 
 // @import "./**.*"; 
