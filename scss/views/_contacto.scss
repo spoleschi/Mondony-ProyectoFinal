@@ -10,23 +10,31 @@
 	}
 	legend {
 		font-size: $medium;
+		text-align: center;
 		text-transform: uppercase;
 		padding: $medium 0;
 	}
 	select {
 		width: 100%;
 		margin-bottom: $medium;
+		padding: $xSmall;
+		border-radius: 10px;
 	}
 	input[type=text] {
 	width: 100%;
 	margin-bottom: $medium;
+	padding: $xSmall;
+	border-radius: 10px
     }
     [type=email] {
     	width: 100%;
 		max-width: 400px;
     	margin-bottom: $medium;
+		padding: $xSmall;
+		border-radius: 10px
     }
     [type=reset] {
+		padding: $small;
     	&:hover {
     		transform: scale(1.1);
     	}
@@ -34,6 +42,7 @@
 	textarea {
 		width: 100%;
 		height: 100px;
+		border-radius: 10px
 	}
 	input[type=submit] {
 		&:hover {

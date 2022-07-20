@@ -3,7 +3,7 @@
 	color: $colorLight;
 	background-color: $colorDark;
 	a {
-		color: $colorLight
+		color: $colorLight;
 	}
 	h3 {
 		font-size: $fontSmall;
@@ -13,9 +13,16 @@
 	}
 }
 .redesSoc {
-	a {
+	a{
 		padding: 0 $medium;
 		font-size: $fontSmall;
+		
+		i{
+			&:hover{
+				transform: scale(1.3);
+			}
+		}
+		
 	}
 }
 .locDesc {
