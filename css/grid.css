@@ -84,17 +84,55 @@ nav{
   font-size: 0.8rem;
   color: #fff;
   background-color: black; }
-  #pie a {
-    color: #fff; }
-  #pie h3 {
-    font-size: 1rem; }
-  #pie p {
-    margin-bottom: 0.5rem; }
+#pie a {
+  color: #fff;
+  text-decoration: none; }
 
-  .redesSoc a {
-      padding: 0 1rem;
-      font-size: 1rem; }
-    
+  #pie a:hover{
+     color:rgb(156, 214, 248);
+  }
+
+#pie h3 {
+  font-size: 1rem; }
+#pie p {
+  margin-bottom: 0.5rem; }
+
+.redesSoc a {
+    padding: 0 1rem;
+    font-size: 1rem; }
+
+.fa-facebook{
+  color: white;
+}
+
+.fa-facebook:hover{
+  transform: scale(2);
+  border-radius: 10px; 
+  color: #3b5998;
+  background-color: white;
+}
+
+.fa-instagram{
+  color: white;
+}
+
+.fa-instagram:hover{
+    transform: scale(2);
+    border-radius: 10px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.fa-whatsapp{
+  color: white; 
+}
+
+.fa-whatsapp:hover{
+    transform: scale(2);
+    border-radius: 10px;
+    color: white; 
+    background: #4dc247;
+}      
+      
 .locDesc {
   display: none; }
   @media screen and (min-width: 768px) {
