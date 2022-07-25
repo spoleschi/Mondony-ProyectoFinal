@@ -203,14 +203,13 @@ nav{
   transform: scale(1.05);
 }
 
-aside h3{
+/* aside h3{
   padding: 1rem;
   background-color: rgb(232, 234, 235);
-  /* border: 1px solid black; */
   text-align: center;
   font-weight: bold;
   border-radius: 10px;
-}
+} */
 
 .muebles div, .materiales div{
   animation-duration: 5s;
@@ -257,6 +256,7 @@ aside h3{
 .containerGrid aside{
   grid-area: aside;
   min-width: 220px;
+  text-align: center;
 }
 .containerGrid aside h3{
   font-size: 1rem;

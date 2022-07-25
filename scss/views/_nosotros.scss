@@ -1,5 +1,5 @@
 .nosotros {
-	background-image: linear-gradient(to right, rgba(121, 121, 126, 0.178) , $colorLight, rgba(121, 121, 126, 0.178));
+	// background-image: linear-gradient(to right, rgba(121, 121, 126, 0.178) , $colorLight, rgba(121, 121, 126, 0.178));
 	h2 {
 		font-weight: 600;
 	}
@@ -7,6 +7,23 @@
 
 #preguntasFrecuentes{
 	overflow-x:hidden;
+}
+
+.btn-link.focus, .btn-link:focus {
+    text-decoration: none;
+}
+
+.btn-link {
+    color: $colorDark;
+	&:hover{
+		color: $colorGray;
+		text-decoration: none;
+	}
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
 }
 
 .formaPago {
