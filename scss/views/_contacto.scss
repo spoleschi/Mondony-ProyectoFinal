@@ -12,7 +12,9 @@
 		font-size: $medium;
 		text-align: center;
 		text-transform: uppercase;
+		margin-bottom: $medium;
 		padding: $medium 0;
+		box-shadow: 3px 3px 3px $colorLightGray;
 	}
 	select {
 		width: 100%;
