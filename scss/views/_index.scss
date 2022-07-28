@@ -99,9 +99,9 @@
 	// align-items: center;
 	// justify-content: end;
 	@include flex(row, center, center, nowrap);
-	opacity: 0.9;
+	// opacity: 0.9;
 	video{
-		width: 90%;
+		width: 100%;
 	}
 }
 
