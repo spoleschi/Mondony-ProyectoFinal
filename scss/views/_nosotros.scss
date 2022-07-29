@@ -77,10 +77,10 @@
 }
 
 .wrapper-video-02{
-	max-height: 300px;
+	max-height: 350px;
 	width: 100%;
 	overflow: hidden;
-	//@include flex(row, center, center, nowrap);
+	@include flex(row, center, center, nowrap);
 	// opacity: 0.9;
 	video{
 		width: 100%;

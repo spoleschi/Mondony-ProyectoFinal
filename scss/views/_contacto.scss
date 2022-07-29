@@ -1,22 +1,30 @@
 .newslatter {
-	background-image: linear-gradient($colorDark,$colorGray);
+	//background-image: linear-gradient($colorDark,$colorGray);
 	// background-image: url("../images/contacto-img.webp");
-	// background-position: center;
-	padding: $xLarge;
+	background-image: url("../images/BRICCOLEBW.jpg");
+	background-size: 100%;
+	background-position: center;
+	padding: $large;
 	line-height: 20px;
 	form {
 		color: $colorLight;
 		max-width: 400px;
-		width: 90%;
+		width: 100%;
 		margin: auto;
+		@include res992{
+			margin: $xLarge;
+		}
 	}
 	legend {
 		font-size: $medium;
 		text-align: center;
+		font-family: $fontBlack;
 		text-transform: uppercase;
 		margin-bottom: $medium;
 		padding: $medium 0;
-		box-shadow: 3px 3px 3px $colorLightGray;
+		// box-shadow: 3px 3px 3px $colorLightGray;
+		background-image: linear-gradient($colorDark,$colorGray);
+		border-radius: 5px;
 	}
 	select {
 		width: 100%;
