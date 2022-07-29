@@ -13,6 +13,11 @@
   src: url(../fonts/Montserrat-Regular.ttf);
   font-display: swap; }
 
+@font-face {
+  font-family: MontserratBold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-display: swap; }
+
 *::after,
 *::before,
 * {
@@ -300,10 +305,9 @@ a:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
-  opacity: 0.9; }
+  flex-wrap: nowrap; }
   .wrapper-video video {
-    width: 90%; }
+    width: 100%; }
 
 .articulo__parrafo {
   line-height: 2rem; }
@@ -348,6 +352,49 @@ a:hover {
 .formaPago tr:hover {
   background: linear-gradient(90deg, #fff 0%, gray 90%); }
 
+.videoNosotros {
+  position: relative; }
+
+.box-title {
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 10; }
+  .box-title h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    font-weight: 400;
+    color: #fff; }
+  .box-title h3 {
+    font-size: 1rem;
+    text-transform: uppercase; }
+
+.videoDiv {
+  height: 200x;
+  overflow: hidden;
+  z-index: -1; }
+
+.wrapper-video-02 {
+  max-height: 300px;
+  width: 100%;
+  overflow: hidden; }
+  .wrapper-video-02 video {
+    width: 100%; }
+
+h2 {
+  font-family: "MontserratBold", "sans-serif"; }
+
+#filosofy {
+  background-image: url(../../images/Mondony-Filosofia-Vision-y-Mission.webp);
+  background-size: 100%;
+  line-height: 2rem; }
+
+#separator {
+  border-bottom: 1px solid black; }
+
 .muebles img {
   width: 100%;
   max-width: 320px;
@@ -384,7 +431,9 @@ a:hover {
     font-size: 1rem;
     text-align: center;
     text-transform: uppercase;
-    padding: 1rem 0; }
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    box-shadow: 3px 3px 3px #cccccc; }
   .newslatter select {
     width: 100%;
     margin-bottom: 1rem;

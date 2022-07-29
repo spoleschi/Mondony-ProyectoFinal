@@ -45,20 +45,27 @@
 	}
 }
 
+.videoNosotros{
+	position: relative;
+}
+
 .box-title{
 	position: absolute;
-	top: 200px;
+	top: 180px;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	width: 100%;
 	text-align: center;
 	color: $colorLight;
 	z-index: 10;
-	font-family: 'Times New Roman', Times, serif;
 	h1{
+		font-family: 'Times New Roman', Times, serif;
 		font-size: $fontXXLarge+1rem;
 		font-weight: 400;
 		color: $colorLight;
+	}
+	h3{
+		font-size: $fontSmall;
+		text-transform: uppercase;
 	}
 }
 .videoDiv{
@@ -68,3 +75,29 @@
 	z-index: -1;
 
 }
+
+.wrapper-video-02{
+	max-height: 300px;
+	width: 100%;
+	overflow: hidden;
+	//@include flex(row, center, center, nowrap);
+	// opacity: 0.9;
+	video{
+		width: 100%;
+	}
+}
+
+h2{
+	font-family: $fontBlack;
+}
+
+#filosofy{
+	background-image: url(../../images/Mondony-Filosofia-Vision-y-Mission.webp);
+	background-size:100%;
+	line-height: $xLarge;
+}
+
+#separator{
+	border-bottom: 1px solid $colorDark;
+}
+
