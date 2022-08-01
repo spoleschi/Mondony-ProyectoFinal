@@ -1,10 +1,10 @@
 .newslatter {
 	//background-image: linear-gradient($colorDark,$colorGray);
 	// background-image: url("../images/contacto-img.webp");
-	background-image: url("../images/BRICCOLEBW.jpg");
+	background-image: url("../images/contactoBaW.webp");
 	background-size: 100%;
-	background-position: center;
-	padding: $large;
+	//background-position: center;
+	padding-bottom: $xSmall;
 	line-height: 20px;
 	form {
 		color: $colorLight;
@@ -14,6 +14,12 @@
 		@include res992{
 			margin: $xLarge;
 		}
+		div{
+			p{
+				background-color: $colorDark;
+				opacity: 0.8;
+			}
+		}
 	}
 	legend {
 		font-size: $medium;
@@ -22,8 +28,9 @@
 		text-transform: uppercase;
 		margin-bottom: $medium;
 		padding: $medium 0;
+		background-color: $colorDark;
 		// box-shadow: 3px 3px 3px $colorLightGray;
-		background-image: linear-gradient($colorDark,$colorGray);
+		//background-image: linear-gradient($colorDark,$colorGray);
 		border-radius: 5px;
 	}
 	select {
@@ -48,7 +55,6 @@
 		border: 2px solid $colorLightGray;
     }
     [type=reset] {
-		padding: $small;
     	&:hover {
     		transform: scale(1.1);
     	}
