@@ -1,7 +1,6 @@
 .aboutVideo{
     width: 100%;
 	max-height: 400px;
-    background-color: beige;
     position: relative;
 	overflow: hidden;
 	@include flex(row, center, center, nowrap);
@@ -13,7 +12,6 @@
   .titleVideo{
     width: 100%;
     position: absolute;
-    
 	text-align: center;
 	color: $colorLight;
 	h1{

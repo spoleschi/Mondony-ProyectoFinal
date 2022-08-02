@@ -1,6 +1,4 @@
 .newslatter {
-	//background-image: linear-gradient($colorDark,$colorGray);
-	// background-image: url("../images/contacto-img.webp");
 	background-image: url("../images/contactoBaW.webp");
 	background-size: 100%;
 	//background-position: center;
@@ -8,15 +6,16 @@
 	line-height: 20px;
 	form {
 		color: $colorLight;
-		max-width: 400px;
+		max-width: 420px;
 		width: 100%;
 		margin: auto;
 		padding: $xSmall;
-		@include res992{
+		@include res768{
 			margin: $xLarge;
 		}
 		div{
 			p{
+				border-radius: 10px;
 				background-color: $colorDark;
 				opacity: 0.8;
 			}
@@ -30,8 +29,7 @@
 		margin-bottom: $medium;
 		padding: $medium 0;
 		background-color: $colorDark;
-		// box-shadow: 3px 3px 3px $colorLightGray;
-		//background-image: linear-gradient($colorDark,$colorGray);
+		box-shadow: 3px 3px 3px $colorLightGray;
 		border-radius: 5px;
 	}
 	select {
@@ -49,7 +47,6 @@
     }
     [type=email] {
     	width: 100%;
-		max-width: 400px;
     	margin-bottom: $medium;
 		padding: $xSmall;
 		border-radius: 5px;
@@ -70,5 +67,9 @@
 		&:hover {
 			transform: scale(1.1);
 		}
+	}
+	#optionSubscrip{
+		background-color: $colorDark;
+		opacity: 0.8;
 	}
 }

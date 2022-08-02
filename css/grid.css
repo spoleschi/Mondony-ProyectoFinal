@@ -24,7 +24,6 @@ body{
   margin: 0 auto;
 }
 
-
 /*NAV*/
 
 nav{
@@ -76,7 +75,6 @@ nav{
 
 #menu_button {
   display: none; }
-
 
 /*FOOTER*/
 
@@ -300,7 +298,6 @@ nav{
 }
 
 /*-- Medias querys Desktop--*/
-
 
 @media screen and (min-width:768px) {
 
