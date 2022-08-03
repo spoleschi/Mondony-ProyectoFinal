@@ -313,6 +313,9 @@ a:hover {
 .articulo__parrafo {
   line-height: 2rem; }
 
+.articulo_img {
+  border-radius: 10px; }
+
 #newIdx {
   color: #fff;
   max-width: 800px; }
