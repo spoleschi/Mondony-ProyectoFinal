@@ -3,6 +3,7 @@
 /*FUENTES*/
 /*TAMAÑO FUENTE*/
 /*ESPACIADOS*/
+/*Mapa de redes*/
 /*Mapas de colores*/
 /*Flex*/
 /*Grid*/
@@ -10,6 +11,11 @@
 @font-face {
   font-family: Montserrat;
   src: url(../fonts/Montserrat-Regular.ttf);
+  font-display: swap; }
+
+@font-face {
+  font-family: MontserratBold;
+  src: url(../fonts/Montserrat-Bold.ttf);
   font-display: swap; }
 
 *::after,
@@ -30,7 +36,8 @@ h1 {
   font-weight: 700; }
 
 h2 {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  font-family: "MontserratBold", "sans-serif"; }
 
 h3 {
   font-size: 1.6rem; }
@@ -163,6 +170,8 @@ a:hover {
   background-color: black; }
   #pie a {
     color: #fff; }
+    #pie a:hover {
+      color: #9cd6f8; }
   #pie h3 {
     font-size: 1rem; }
   #pie p {
@@ -171,6 +180,27 @@ a:hover {
 .redesSoc a {
   padding: 0 1rem;
   font-size: 1rem; }
+  .redesSoc a i:hover {
+    transform: scale(2); }
+
+.fa-facebook {
+  color: #fff; }
+  .fa-facebook:hover {
+    border-radius: 10px;
+    color: #3b5998;
+    background-color: #fff; }
+
+.fa-instagram {
+  color: #fff; }
+  .fa-instagram:hover {
+    border-radius: 10px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+
+.fa-whatsapp {
+  color: #fff; }
+  .fa-whatsapp:hover {
+    border-radius: 10px;
+    background: #4dc247; }
 
 .locDesc {
   display: none; }
@@ -269,20 +299,22 @@ a:hover {
   font-size: 20px; }
 
 .wrapper-video {
-  height: 300px;
+  max-height: 600px;
   width: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
-  opacity: 0.9; }
+  flex-wrap: nowrap; }
   .wrapper-video video {
-    width: 90%; }
+    width: 100%; }
 
 .articulo__parrafo {
   line-height: 2rem; }
+
+.articulo_img {
+  border-radius: 10px; }
 
 #newIdx {
   color: #fff;
@@ -291,13 +323,58 @@ a:hover {
 #email {
   margin-right: 0.5rem; }
 
-.nosotros {
-  background-image: linear-gradient(to right, rgba(121, 121, 126, 0.178), #fff, rgba(121, 121, 126, 0.178)); }
-  .nosotros h2 {
-    font-weight: 600; }
+.aboutVideo {
+  width: 100%;
+  max-height: 400px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .aboutVideo video {
+    width: 100%; }
+
+.titleVideo {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  color: #fff; }
+  .titleVideo h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    font-weight: 400; }
+  .titleVideo h3 {
+    font-size: 1rem;
+    text-transform: uppercase; }
+
+#filosofy {
+  background-image: url(../../images/Mondony-Filosofia-Vision-y-Mission.webp);
+  background-size: 100%;
+  line-height: 2rem; }
+
+#separator {
+  border-bottom: 1px solid black; }
+
+.ocultar {
+  overflow: hidden; }
 
 #preguntasFrecuentes {
   overflow-x: hidden; }
+
+.btn-link.focus, .btn-link:focus {
+  text-decoration: none; }
+
+.btn-link {
+  color: black; }
+  .btn-link:hover {
+    color: gray;
+    text-decoration: none; }
+
+.btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25); }
 
 .formaPago th {
   background-color: gray;
@@ -337,32 +414,59 @@ a:hover {
   transform: scale(1.05); }
 
 .newslatter {
-  background-image: linear-gradient(black, gray);
-  padding: 2rem;
+  background-image: url("../images/contactoBaW.webp");
+  background-size: 100%;
+  padding-bottom: 0.3rem;
   line-height: 20px; }
   .newslatter form {
     color: #fff;
-    max-width: 400px;
+    max-width: 420px;
     width: 90%;
-    margin: auto; }
+    margin: auto;
+    padding: 0.3rem; }
+    @media screen and (min-width: 768px) {
+      .newslatter form {
+        margin: 2rem; } }
+    .newslatter form div p {
+      border-radius: 10px;
+      background-color: black;
+      opacity: 0.8; }
   .newslatter legend {
     font-size: 1rem;
+    text-align: center;
+    font-family: "MontserratBold", "sans-serif";
     text-transform: uppercase;
-    padding: 1rem 0; }
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    background-color: black;
+    box-shadow: 3px 3px 3px #cccccc;
+    border-radius: 5px; }
   .newslatter select {
     width: 100%;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    border-radius: 5px; }
   .newslatter input[type=text] {
     width: 100%;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    border-radius: 5px;
+    border: 2px solid #cccccc; }
   .newslatter [type=email] {
     width: 100%;
-    max-width: 400px;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    border-radius: 5px;
+    border: 2px solid #cccccc; }
   .newslatter [type=reset]:hover {
     transform: scale(1.1); }
   .newslatter textarea {
     width: 100%;
-    height: 100px; }
+    height: 100px;
+    border-radius: 5px;
+    border: 2px solid #cccccc; }
   .newslatter input[type=submit]:hover {
     transform: scale(1.1); }
+  .newslatter #optionSubscrip {
+    background-color: black;
+    opacity: 0.8; }

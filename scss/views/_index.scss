@@ -92,21 +92,25 @@
 }
 
 .wrapper-video{
-	height: 300px;
+	max-height: 600px;
 	width: 100%;
 	overflow: hidden;
 	// display:flex;
 	// align-items: center;
 	// justify-content: end;
-	@include flex(row, end, center, nowrap);
-	opacity: 0.9;
+	@include flex(row, center, center, nowrap);
+	// opacity: 0.9;
 	video{
-		width: 90%;
+		width: 100%;
 	}
 }
 
 .articulo__parrafo{
-	line-height: $xlarge;
+	line-height: $xLarge;
+}
+
+.articulo_img{
+	border-radius: 10px;
 }
 
 #newIdx {
@@ -117,3 +121,4 @@
 #email{
 	margin-right:$small;
 }
+
