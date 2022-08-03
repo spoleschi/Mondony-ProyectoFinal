@@ -421,7 +421,7 @@ a:hover {
   .newslatter form {
     color: #fff;
     max-width: 420px;
-    width: 100%;
+    width: 90%;
     margin: auto;
     padding: 0.3rem; }
     @media screen and (min-width: 768px) {
